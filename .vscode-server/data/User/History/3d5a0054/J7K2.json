@@ -1,0 +1,13 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "python.testing.pytestPath": "C:\\Python",
+    "pip-updater.VirtualEnv": [
+
+    ],
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+    "remote.SSH.remoteCommand": "/bin/bash",
+    "remote.SSH.remotePlatform": {
+        "my-server": "linux"
+    }
+}

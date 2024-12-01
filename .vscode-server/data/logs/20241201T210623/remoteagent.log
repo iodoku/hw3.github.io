@@ -1,0 +1,46 @@
+2024-12-01 21:06:23.645 [info] 
+
+
+
+
+2024-12-01 21:06:23.653 [info] Extension host agent started.
+2024-12-01 21:06:23.692 [info] Started initializing default profile extensions in extensions installation folder. file:///home/ubuntu/.vscode-server/extensions
+2024-12-01 21:06:23.693 [info] [<unknown>][6b356273][ManagementConnection] New connection established.
+2024-12-01 21:06:23.696 [info] [<unknown>][6adaf137][ExtensionHostConnection] New connection established.
+2024-12-01 21:06:23.712 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/ubuntu/.vscode-server/extensions
+2024-12-01 21:06:23.787 [info] Installing extensions...
+2024-12-01 21:06:23.800 [info] [<unknown>][6adaf137][ExtensionHostConnection] <20160> Launched Extension Host Process.
+2024-12-01 21:06:25.097 [info] Installing extension 'ms-ceintl.vscode-language-pack-ko'...
+2024-12-01 21:06:25.354 [info] Getting Manifest... ms-ceintl.vscode-language-pack-ko
+2024-12-01 21:06:25.514 [info] Installing extension: ms-ceintl.vscode-language-pack-ko {"isMachineScoped":true,"isBuiltin":false,"installGivenVersion":false,"isApplicationScoped":true,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/home/ubuntu/.vscode-server/extensions/extensions.json","external":"file:///home/ubuntu/.vscode-server/extensions/extensions.json","path":"/home/ubuntu/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.3","date":"2024-11-13T14:50:04.152Z"}}
+2024-12-01 21:06:28.506 [info] Extension signature verification result for ms-ceintl.vscode-language-pack-ko: Success. Executed: true. Duration: 1800ms.
+2024-12-01 21:06:28.870 [info] Extracted extension to file:///home/ubuntu/.vscode-server/extensions/ms-ceintl.vscode-language-pack-ko-1.95.2024103009: ms-ceintl.vscode-language-pack-ko
+2024-12-01 21:06:28.874 [info] Renamed to /home/ubuntu/.vscode-server/extensions/ms-ceintl.vscode-language-pack-ko-1.95.2024103009
+2024-12-01 21:06:28.884 [info] Adding language packs from the extension ms-ceintl.vscode-language-pack-ko
+2024-12-01 21:06:28.899 [info] Extension installed successfully: ms-ceintl.vscode-language-pack-ko file:///home/ubuntu/.vscode-server/extensions/extensions.json
+2024-12-01 21:06:28.900 [info] Extension 'ms-ceintl.vscode-language-pack-ko' v1.95.2024103009 was successfully installed.
+2024-12-01 21:06:46.498 [info] [<unknown>][6b356273][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-12-01 21:06:46.545 [info] [<unknown>][6adaf137][ExtensionHostConnection] <20160> Extension Host Process exited with code: 0, signal: null.
+2024-12-01 21:06:46.546 [info] Cancelling previous shutdown timeout
+2024-12-01 21:06:46.546 [info] Last EH closed, waiting before shutting down
+2024-12-01 21:06:59.611 [info] [<unknown>][a2de2357][ManagementConnection] New connection established.
+2024-12-01 21:06:59.616 [info] [<unknown>][ae5ac681][ExtensionHostConnection] New connection established.
+2024-12-01 21:06:59.625 [info] [<unknown>][ae5ac681][ExtensionHostConnection] <20380> Launched Extension Host Process.
+2024-12-01 21:08:55.046 [info] [<unknown>][a2de2357][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-12-01 21:08:55.136 [info] [<unknown>][ae5ac681][ExtensionHostConnection] <20380> Extension Host Process exited with code: 0, signal: null.
+2024-12-01 21:08:55.137 [info] Cancelling previous shutdown timeout
+2024-12-01 21:08:55.137 [info] Last EH closed, waiting before shutting down
+2024-12-01 21:08:56.821 [info] [<unknown>][2c069e19][ManagementConnection] New connection established.
+2024-12-01 21:08:56.824 [info] [<unknown>][5de2af87][ExtensionHostConnection] New connection established.
+2024-12-01 21:08:56.838 [info] [<unknown>][5de2af87][ExtensionHostConnection] <20610> Launched Extension Host Process.
+2024-12-01 21:09:31.976 [info] [<unknown>][2c069e19][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-12-01 21:09:31.987 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/server-main.js:183:1060)
+    at process.emit (node:events:531:35)
+2024-12-01 21:09:32.041 [info] [<unknown>][5de2af87][ExtensionHostConnection] <20610> Extension Host Process exited with code: 0, signal: null.
+2024-12-01 21:09:32.042 [info] Cancelling previous shutdown timeout
+2024-12-01 21:09:32.042 [info] Last EH closed, waiting before shutting down
+2024-12-01 21:09:33.462 [info] [<unknown>][511fd105][ExtensionHostConnection] New connection established.
+2024-12-01 21:09:33.472 [info] [<unknown>][511fd105][ExtensionHostConnection] <20745> Launched Extension Host Process.
+2024-12-01 21:09:33.474 [info] [<unknown>][42cd7d6e][ManagementConnection] New connection established.
+2024-12-01 21:14:32.043 [info] New EH opened, aborting shutdown

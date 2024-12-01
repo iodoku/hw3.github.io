@@ -1,0 +1,285 @@
+2024-12-01 21:09:35.669 [info] [main] 로그 수준: Info
+2024-12-01 21:09:35.669 [info] [main] "git"에서 찾은 git 유효성을 검사하는 중
+2024-12-01 21:09:35.669 [info] [main] "2.43.0"에서 git "git"을(를) 사용하는 중
+2024-12-01 21:09:35.669 [info] [Model][doInitialScan] Initial repository scan started
+2024-12-01 21:09:35.674 [info] > git rev-parse --show-toplevel [6ms]
+2024-12-01 21:09:35.674 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-12-01 21:09:35.680 [info] > git rev-parse --show-toplevel [2ms]
+2024-12-01 21:09:35.680 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-12-01 21:09:35.685 [info] > git rev-parse --show-toplevel [2ms]
+2024-12-01 21:09:35.685 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-12-01 21:09:35.691 [info] > git rev-parse --show-toplevel [3ms]
+2024-12-01 21:09:35.691 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-12-01 21:09:35.694 [info] > git rev-parse --show-toplevel [0ms]
+2024-12-01 21:09:35.694 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-12-01 21:09:35.701 [info] > git rev-parse --show-toplevel [4ms]
+2024-12-01 21:09:35.701 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-12-01 21:09:35.706 [info] > git rev-parse --show-toplevel [2ms]
+2024-12-01 21:09:35.706 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-12-01 21:09:35.709 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-12-01 21:09:36.377 [info] > git rev-parse --show-toplevel [3ms]
+2024-12-01 21:09:36.377 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-12-01 21:09:39.346 [info] > git rev-parse --show-toplevel [4ms]
+2024-12-01 21:09:39.346 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-12-01 21:13:12.047 [info] > git rev-parse --show-toplevel [4ms]
+2024-12-01 21:13:12.058 [info] > git rev-parse --git-dir --git-common-dir [3ms]
+2024-12-01 21:13:12.089 [info] [Model][openRepository] Opened repository: /home/ubuntu
+2024-12-01 21:13:12.109 [info] [Git][getRemotes] No remotes found in the git config file
+2024-12-01 21:13:12.115 [info] > git config --get commit.template [15ms]
+2024-12-01 21:13:12.116 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2024-12-01 21:13:12.117 [warning] [Git][getBranch] No such branch: master
+2024-12-01 21:13:12.133 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-12-01 21:13:12.191 [info] > git status -z -uall [68ms]
+2024-12-01 21:13:12.306 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [13ms]
+2024-12-01 21:13:12.306 [warning] [Git][getBranch] No such branch: master
+2024-12-01 21:13:12.307 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for master: Error: No such branch: master.
+2024-12-01 21:13:12.308 [info] > git config --get commit.template [3ms]
+2024-12-01 21:13:12.313 [info] [Git][getRemotes] No remotes found in the git config file
+2024-12-01 21:13:12.322 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2024-12-01 21:13:12.322 [warning] [Git][getBranch] No such branch: master
+2024-12-01 21:13:12.753 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [423ms]
+2024-12-01 21:13:12.765 [info] > git status -z -uall [440ms]
+2024-12-01 21:13:12.765 [info] > git check-ignore -v -z --stdin [4ms]
+2024-12-01 21:13:13.142 [info] > git show --textconv :app.py [5ms]
+2024-12-01 21:13:13.144 [info] > git ls-files --stage -- /home/ubuntu/app.py [3ms]
+2024-12-01 21:13:16.241 [info] [Git][getRemotes] No remotes found in the git config file
+2024-12-01 21:13:16.243 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-12-01 21:13:16.243 [warning] [Git][getBranch] No such branch: master
+2024-12-01 21:13:16.245 [info] > git config --get commit.template [8ms]
+2024-12-01 21:13:16.259 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2024-12-01 21:13:16.274 [info] > git status -z -uall [25ms]
+2024-12-01 21:13:35.569 [info] [Git][getRemotes] No remotes found in the git config file
+2024-12-01 21:13:35.571 [info] > git config --get commit.template [9ms]
+2024-12-01 21:13:35.572 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-12-01 21:13:35.572 [warning] [Git][getBranch] No such branch: master
+2024-12-01 21:13:35.589 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2024-12-01 21:13:35.623 [info] > git status -z -uall [45ms]
+2024-12-01 21:13:42.499 [info] [Git][getRemotes] No remotes found in the git config file
+2024-12-01 21:13:42.500 [info] > git config --get commit.template [8ms]
+2024-12-01 21:13:42.501 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-12-01 21:13:42.501 [warning] [Git][getBranch] No such branch: master
+2024-12-01 21:13:42.518 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-12-01 21:13:42.555 [info] > git status -z -uall [47ms]
+2024-12-01 21:13:46.268 [info] > git ls-files --stage -- /home/ubuntu/app.py [3ms]
+2024-12-01 21:13:46.282 [info] > git show --textconv :app.py [3ms]
+2024-12-01 21:14:02.383 [info] > git config --get commit.template [8ms]
+2024-12-01 21:14:02.384 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-12-01 21:14:02.384 [warning] [Git][getBranch] No such branch: master
+2024-12-01 21:14:02.400 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-12-01 21:14:02.436 [info] > git status -z -uall [46ms]
+2024-12-01 21:14:04.218 [info] > git check-ignore -v -z --stdin [2ms]
+2024-12-01 21:14:07.530 [info] > git config --get commit.template [8ms]
+2024-12-01 21:14:07.531 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-12-01 21:14:07.532 [warning] [Git][getBranch] No such branch: master
+2024-12-01 21:14:07.549 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [5ms]
+2024-12-01 21:14:07.581 [info] > git status -z -uall [44ms]
+2024-12-01 21:14:12.257 [info] > git check-ignore -v -z --stdin [3ms]
+2024-12-01 21:14:16.300 [info] > git config --get commit.template [9ms]
+2024-12-01 21:14:16.301 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2024-12-01 21:14:16.301 [warning] [Git][getBranch] No such branch: master
+2024-12-01 21:14:16.318 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-12-01 21:14:16.349 [info] > git status -z -uall [42ms]
+2024-12-01 21:14:21.425 [info] > git config --get commit.template [1ms]
+2024-12-01 21:14:21.431 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-12-01 21:14:21.431 [warning] [Git][getBranch] No such branch: master
+2024-12-01 21:14:21.440 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [0ms]
+2024-12-01 21:14:21.461 [info] > git status -z -uall [26ms]
+2024-12-01 21:14:23.380 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-12-01 21:14:23.380 [warning] [Git][getBranch] No such branch: master
+2024-12-01 21:14:23.380 [info] > git config --get commit.template [3ms]
+2024-12-01 21:14:23.388 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2024-12-01 21:14:23.397 [info] > git status -z -uall [14ms]
+2024-12-01 21:14:24.805 [info] > git ls-files --stage -- /home/ubuntu/app.py [10ms]
+2024-12-01 21:14:24.818 [info] > git cat-file -s b962d3d2fa470d3556a1c2880c23d6585cd8a2e7 [5ms]
+2024-12-01 21:14:24.848 [info] > git show --textconv :app.py [9ms]
+2024-12-01 21:14:26.822 [info] > git config --get commit.template [11ms]
+2024-12-01 21:14:26.823 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [5ms]
+2024-12-01 21:14:26.823 [warning] [Git][getBranch] No such branch: master
+2024-12-01 21:14:26.842 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2024-12-01 21:14:26.872 [info] > git status -z -uall [42ms]
+2024-12-01 21:14:28.996 [info] > git ls-files --stage -- /home/ubuntu/app.py [5ms]
+2024-12-01 21:14:29.006 [info] > git cat-file -s b962d3d2fa470d3556a1c2880c23d6585cd8a2e7 [4ms]
+2024-12-01 21:14:29.021 [info] > git show --textconv :app.py [5ms]
+2024-12-01 21:14:37.389 [info] > git config --get commit.template [8ms]
+2024-12-01 21:14:37.390 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-12-01 21:14:37.390 [warning] [Git][getBranch] No such branch: master
+2024-12-01 21:14:37.406 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2024-12-01 21:14:37.437 [info] > git status -z -uall [41ms]
+2024-12-01 21:14:42.519 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [7ms]
+2024-12-01 21:14:42.520 [warning] [Git][getBranch] No such branch: master
+2024-12-01 21:14:42.521 [info] > git config --get commit.template [2ms]
+2024-12-01 21:14:42.537 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2024-12-01 21:14:42.567 [info] > git status -z -uall [40ms]
+2024-12-01 21:14:45.776 [info] > git config --get commit.template [9ms]
+2024-12-01 21:14:45.778 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:14:45.778 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:14:45.796 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2024-12-01 21:14:45.827 [info] > git status -z -uall [42ms]
+2024-12-01 21:14:45.911 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:14:45.911 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:14:45.912 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for main: Error: No such branch: main.
+2024-12-01 21:14:48.923 [info] > git ls-files --stage -- /home/ubuntu/app.py [6ms]
+2024-12-01 21:14:48.934 [info] > git cat-file -s b962d3d2fa470d3556a1c2880c23d6585cd8a2e7 [3ms]
+2024-12-01 21:14:48.967 [info] > git show --textconv :app.py [5ms]
+2024-12-01 21:14:49.410 [info] > git config --get commit.template [11ms]
+2024-12-01 21:14:49.411 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:14:49.412 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:14:49.434 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-12-01 21:14:49.465 [info] > git status -z -uall [44ms]
+2024-12-01 21:14:55.945 [info] > git config --get commit.template [9ms]
+2024-12-01 21:14:55.947 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:14:55.947 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:14:55.966 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2024-12-01 21:14:56.000 [info] > git status -z -uall [46ms]
+2024-12-01 21:16:10.540 [info] > git config --get commit.template [9ms]
+2024-12-01 21:16:10.541 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:16:10.541 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:16:10.559 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2024-12-01 21:16:10.597 [info] > git status -z -uall [50ms]
+2024-12-01 21:16:12.464 [info] > git ls-files --stage -- /home/ubuntu/app.py [5ms]
+2024-12-01 21:16:12.474 [info] > git cat-file -s b962d3d2fa470d3556a1c2880c23d6585cd8a2e7 [4ms]
+2024-12-01 21:16:12.508 [info] > git show --textconv :app.py [5ms]
+2024-12-01 21:16:15.705 [info] > git config --get commit.template [10ms]
+2024-12-01 21:16:15.707 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:16:15.708 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:16:15.727 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2024-12-01 21:16:15.767 [info] > git status -z -uall [52ms]
+2024-12-01 21:16:20.848 [info] > git config --get commit.template [1ms]
+2024-12-01 21:16:20.854 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-12-01 21:16:20.855 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:16:20.872 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-12-01 21:16:20.903 [info] > git status -z -uall [42ms]
+2024-12-01 21:16:25.984 [info] > git config --get commit.template [10ms]
+2024-12-01 21:16:25.986 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:16:25.986 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:16:26.006 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-12-01 21:16:26.035 [info] > git status -z -uall [42ms]
+2024-12-01 21:16:32.657 [info] > git config --get commit.template [10ms]
+2024-12-01 21:16:32.658 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:16:32.658 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:16:32.680 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2024-12-01 21:16:32.707 [info] > git status -z -uall [41ms]
+2024-12-01 21:16:37.798 [info] > git config --get commit.template [11ms]
+2024-12-01 21:16:37.800 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-12-01 21:16:37.800 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:16:37.819 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2024-12-01 21:16:37.850 [info] > git status -z -uall [43ms]
+2024-12-01 21:16:46.936 [info] > git config --get commit.template [8ms]
+2024-12-01 21:16:46.938 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-12-01 21:16:46.938 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:16:46.954 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2024-12-01 21:16:46.986 [info] > git status -z -uall [42ms]
+2024-12-01 21:16:47.798 [info] > git config --get commit.template [8ms]
+2024-12-01 21:16:47.801 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-12-01 21:16:47.802 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:16:47.818 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-12-01 21:16:47.854 [info] > git status -z -uall [45ms]
+2024-12-01 21:16:49.043 [info] > git ls-files --stage -- /home/ubuntu/app.py [6ms]
+2024-12-01 21:16:49.053 [info] > git cat-file -s b962d3d2fa470d3556a1c2880c23d6585cd8a2e7 [4ms]
+2024-12-01 21:16:49.071 [info] > git show --textconv :app.py [5ms]
+2024-12-01 21:16:52.086 [info] > git config --get commit.template [10ms]
+2024-12-01 21:16:52.087 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-12-01 21:16:52.087 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:16:52.106 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2024-12-01 21:16:52.143 [info] > git status -z -uall [50ms]
+2024-12-01 21:16:58.544 [info] > git config --get commit.template [3ms]
+2024-12-01 21:16:58.554 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-12-01 21:16:58.554 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:16:58.574 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2024-12-01 21:16:58.605 [info] > git status -z -uall [42ms]
+2024-12-01 21:17:03.684 [info] > git config --get commit.template [7ms]
+2024-12-01 21:17:03.685 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:17:03.686 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:17:03.700 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2024-12-01 21:17:03.737 [info] > git status -z -uall [46ms]
+2024-12-01 21:17:13.313 [info] > git config --get commit.template [8ms]
+2024-12-01 21:17:13.315 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:17:13.315 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:17:13.332 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-12-01 21:17:13.365 [info] > git status -z -uall [43ms]
+2024-12-01 21:17:31.750 [info] > git config --get commit.template [8ms]
+2024-12-01 21:17:31.752 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-12-01 21:17:31.752 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:17:31.768 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2024-12-01 21:17:31.801 [info] > git status -z -uall [43ms]
+2024-12-01 21:17:32.556 [info] > git config --get commit.template [9ms]
+2024-12-01 21:17:32.558 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:17:32.558 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:17:32.577 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-12-01 21:17:32.607 [info] > git status -z -uall [41ms]
+2024-12-01 21:17:36.003 [info] > git ls-files --stage -- /home/ubuntu/app.py [6ms]
+2024-12-01 21:17:36.014 [info] > git cat-file -s b962d3d2fa470d3556a1c2880c23d6585cd8a2e7 [3ms]
+2024-12-01 21:17:36.049 [info] > git show --textconv :app.py [5ms]
+2024-12-01 21:17:36.875 [info] > git config --get commit.template [4ms]
+2024-12-01 21:17:36.888 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:17:36.888 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:17:36.907 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-12-01 21:17:36.937 [info] > git status -z -uall [41ms]
+2024-12-01 21:17:38.423 [info] > git ls-files --stage -- /home/ubuntu/app.py [5ms]
+2024-12-01 21:17:38.433 [info] > git cat-file -s b962d3d2fa470d3556a1c2880c23d6585cd8a2e7 [4ms]
+2024-12-01 21:17:38.449 [info] > git show --textconv :app.py [5ms]
+2024-12-01 21:17:42.018 [info] > git config --get commit.template [9ms]
+2024-12-01 21:17:42.019 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:17:42.020 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:17:42.042 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [5ms]
+2024-12-01 21:17:42.068 [info] > git status -z -uall [42ms]
+2024-12-01 21:17:44.305 [info] > git config --get commit.template [8ms]
+2024-12-01 21:17:44.307 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:17:44.308 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:17:44.324 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-12-01 21:17:44.355 [info] > git status -z -uall [41ms]
+2024-12-01 21:17:45.539 [info] > git ls-files --stage -- /home/ubuntu/app.py [5ms]
+2024-12-01 21:17:45.550 [info] > git cat-file -s b962d3d2fa470d3556a1c2880c23d6585cd8a2e7 [4ms]
+2024-12-01 21:17:45.568 [info] > git show --textconv :app.py [6ms]
+2024-12-01 21:17:47.238 [info] > git config --get commit.template [9ms]
+2024-12-01 21:17:47.240 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:17:47.240 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:17:47.259 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [5ms]
+2024-12-01 21:17:47.298 [info] > git status -z -uall [52ms]
+2024-12-01 21:17:52.375 [info] > git config --get commit.template [10ms]
+2024-12-01 21:17:52.377 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-12-01 21:17:52.378 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:17:52.401 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [5ms]
+2024-12-01 21:17:52.432 [info] > git status -z -uall [47ms]
+2024-12-01 21:19:40.246 [info] > git config --get commit.template [8ms]
+2024-12-01 21:19:40.247 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:19:40.247 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:19:40.268 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [7ms]
+2024-12-01 21:19:40.309 [info] > git status -z -uall [56ms]
+2024-12-01 21:19:45.417 [info] > git config --get commit.template [9ms]
+2024-12-01 21:19:45.418 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:19:45.420 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:19:45.435 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2024-12-01 21:19:45.470 [info] > git status -z -uall [44ms]
+2024-12-01 21:19:50.553 [info] > git config --get commit.template [9ms]
+2024-12-01 21:19:50.554 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:19:50.554 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:19:50.570 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-12-01 21:19:50.603 [info] > git status -z -uall [43ms]
+2024-12-01 21:19:56.065 [info] > git check-ignore -v -z --stdin [6ms]
+2024-12-01 21:20:00.253 [info] > git config --get commit.template [9ms]
+2024-12-01 21:20:00.254 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:20:00.254 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:20:00.272 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2024-12-01 21:20:00.309 [info] > git status -z -uall [49ms]
+2024-12-01 21:20:05.400 [info] > git config --get commit.template [10ms]
+2024-12-01 21:20:05.401 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-12-01 21:20:05.401 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:20:05.420 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2024-12-01 21:20:05.451 [info] > git status -z -uall [42ms]
+2024-12-01 21:20:10.542 [info] > git config --get commit.template [9ms]
+2024-12-01 21:20:10.544 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-12-01 21:20:10.544 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:20:10.563 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-12-01 21:20:10.595 [info] > git status -z -uall [44ms]
+2024-12-01 21:20:16.259 [info] > git config --get commit.template [10ms]
+2024-12-01 21:20:16.261 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-12-01 21:20:16.261 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:20:16.279 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2024-12-01 21:20:16.311 [info] > git status -z -uall [42ms]
+2024-12-01 21:20:19.275 [info] > git check-ignore -v -z --stdin [5ms]
+2024-12-01 21:20:21.375 [info] > git config --get commit.template [8ms]
+2024-12-01 21:20:21.376 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2024-12-01 21:20:21.377 [warning] [Git][getBranch] No such branch: main
+2024-12-01 21:20:21.393 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2024-12-01 21:20:21.421 [info] > git status -z -uall [39ms]
