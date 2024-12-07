@@ -1,0 +1,21 @@
+2024-12-07 10:30:42.272 [info] 
+
+
+
+
+2024-12-07 10:30:42.281 [info] Extension host agent started.
+2024-12-07 10:30:42.329 [info] [<unknown>][3aa43693][ManagementConnection] New connection established.
+2024-12-07 10:30:42.333 [info] [<unknown>][3fd03419][ExtensionHostConnection] New connection established.
+2024-12-07 10:30:42.365 [info] Deleted uninstalled extension from disk cweijan.vscode-mysql-client2 /home/ubuntu/.vscode-server/extensions/cweijan.vscode-mysql-client2-7.7.3
+2024-12-07 10:30:42.548 [info] [<unknown>][3fd03419][ExtensionHostConnection] <2185775> Launched Extension Host Process.
+2024-12-07 10:35:42.284 [info] New EH opened, aborting shutdown
+2024-12-07 13:50:59.520 [info] [<unknown>][3aa43693][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2024-12-07 13:55:45.150 [info] [<unknown>][3aa43693][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2024-12-07 13:55:45.162 [info] [<unknown>][a63393fc][ExtensionHostConnection] New connection established.
+2024-12-07 13:55:45.166 [info] [<unknown>][78cb3c8d][ManagementConnection] New connection established.
+2024-12-07 13:55:45.179 [info] [<unknown>][a63393fc][ExtensionHostConnection] <2194026> Launched Extension Host Process.
+2024-12-07 13:55:45.184 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/server-main.js:183:1060)
+    at process.emit (node:events:531:35)
+2024-12-07 14:00:45.325 [info] [<unknown>][3aa43693][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+2024-12-07 14:00:45.483 [info] [<unknown>][3fd03419][ExtensionHostConnection] <2185775> Extension Host Process exited with code: 0, signal: null.

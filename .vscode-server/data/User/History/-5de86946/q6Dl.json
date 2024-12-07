@@ -1,0 +1,166 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Saramin Jobs API",
+    "description": "API for Saramin job data",
+    "version": "1.0.0"
+  },
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header",
+      "description": "JWT Authorization header using the Bearer scheme. Example: 'Bearer {token}'"
+    }
+  },
+  "security": [
+    {
+      "Bearer": []
+    }
+  ],
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Register a new user",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "username": { "type": "string" },
+                "password": { "type": "string" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": { "description": "User registered successfully" }
+        }
+      }
+    },
+    "/login": {
+      "post": {
+        "summary": "Login a user",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "username": { "type": "string" },
+                "password": { "type": "string" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": { "description": "JWT token issued" }
+        }
+      }
+    },
+    "/api/jobs": {
+      "get": {
+        "summary": "Retrieve job listings with pagination, filtering, and search",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "type": "integer",
+            "description": "Page number"
+          },
+          {
+            "name": "location",
+            "in": "query",
+            "type": "string",
+            "description": "Filter by location"
+          },
+          {
+            "name": "experience",
+            "in": "query",
+            "type": "string",
+            "description": "Filter by experience"
+          },
+          {
+            "name": "salary",
+            "in": "query",
+            "type": "string",
+            "description": "Filter by salary"
+          },
+          {
+            "name": "sector",
+            "in": "query",
+            "type": "string",
+            "description": "Filter by sector"
+          },
+          {
+            "name": "keyword",
+            "in": "query",
+            "type": "string",
+            "description": "Search by keyword"
+          },
+          {
+            "name": "company",
+            "in": "query",
+            "type": "string",
+            "description": "Search by company"
+          },
+          {
+            "name": "title",
+            "in": "query",
+            "type": "string",
+            "description": "Search by title"
+          }
+        ],
+        "responses": {
+          "200": { "description": "List of jobs" }
+        }
+      }
+    },
+    "/api/crawl": {
+      "post": {
+        "summary": "Crawl job listings and store them in the database",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "keyword": { "type": "string", "description": "Keyword to search" },
+                "pages": { "type": "integer", "description": "Number of pages to crawl" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": { "description": "Data crawled and stored successfully" },
+          "500": { "description": "Server error" }
+        }
+      }
+    },
+    "/api/jobs/{job_id}": {
+      "get": {
+        "summary": "Retrieve job details by ID",
+        "parameters": [
+          {
+            "name": "job_id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "description": "Job ID"
+          }
+        ],
+        "responses": {
+          "200": { "description": "Job details" },
+          "404": { "description": "Job not found" }
+        }
+      }
+    }
+  }
+}

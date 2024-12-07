@@ -5,62 +5,30 @@
 * the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
 * the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
 *
-Server bound to /tmp/code-35ecc0ba-3669-4b63-a6ab-1a5450668620
-Extension host agent listening on /tmp/code-35ecc0ba-3669-4b63-a6ab-1a5450668620
+Server bound to /tmp/code-b9574dca-62bb-4891-8cad-b310e3868e6f
+Extension host agent listening on /tmp/code-b9574dca-62bb-4891-8cad-b310e3868e6f
 
-[21:06:23] 
-
-
+[10:30:42] 
 
 
-[21:06:23] Extension host agent started.
-[21:06:23] Started initializing default profile extensions in extensions installation folder. file:///home/ubuntu/.vscode-server/extensions
-[21:06:23] [<unknown>][6b356273][ManagementConnection] New connection established.
-[21:06:23] [<unknown>][6adaf137][ExtensionHostConnection] New connection established.
-[21:06:23] Completed initializing default profile extensions in extensions installation folder. file:///home/ubuntu/.vscode-server/extensions
-[21:06:23] Installing extensions...
-[21:06:23] [<unknown>][6adaf137][ExtensionHostConnection] <20160> Launched Extension Host Process.
-[21:06:25] Installing extension 'ms-ceintl.vscode-language-pack-ko'...
-[21:06:25] Getting Manifest... ms-ceintl.vscode-language-pack-ko
-[21:06:25] Installing extension: ms-ceintl.vscode-language-pack-ko {
-  isMachineScoped: true,
-  isBuiltin: false,
-  installPreReleaseVersion: undefined,
-  installGivenVersion: false,
-  isApplicationScoped: true,
-  installOnlyNewlyAddedFromExtensionPack: true,
-  profileLocation: vr {
-    scheme: 'file',
-    authority: '',
-    path: '/home/ubuntu/.vscode-server/extensions/extensions.json',
-    query: '',
-    fragment: '',
-    _formatted: 'file:///home/ubuntu/.vscode-server/extensions/extensions.json',
-    _fsPath: '/home/ubuntu/.vscode-server/extensions/extensions.json'
-  },
-  productVersion: { version: '1.95.3', date: '2024-11-13T14:50:04.152Z' }
+
+
+[10:30:42] Extension host agent started.
+[10:30:42] [<unknown>][3aa43693][ManagementConnection] New connection established.
+[10:30:42] [<unknown>][3fd03419][ExtensionHostConnection] New connection established.
+[10:30:42] Deleted uninstalled extension from disk cweijan.vscode-mysql-client2 /home/ubuntu/.vscode-server/extensions/cweijan.vscode-mysql-client2-7.7.3
+Generating translation files failed. Error: ENOENT: no such file or directory, open '/home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/nls.keys.json'
+    at async open (node:internal/fs/promises:639:25)
+    at async Object.readFile (node:internal/fs/promises:1242:14)
+    at async Nv (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/server-main.js:3:16834)
+    at async o8 (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/server-main.js:67:36551)
+    at async jh.start (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/server-main.js:67:39717) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/nls.keys.json'
 }
-[21:06:28] Extension signature verification result for ms-ceintl.vscode-language-pack-ko: Success. Executed: true. Duration: 1800ms.
-[21:06:28] Extracted extension to file:///home/ubuntu/.vscode-server/extensions/ms-ceintl.vscode-language-pack-ko-1.95.2024103009: ms-ceintl.vscode-language-pack-ko
-[21:06:28] Renamed to /home/ubuntu/.vscode-server/extensions/ms-ceintl.vscode-language-pack-ko-1.95.2024103009
-[21:06:28] Adding language packs from the extension ms-ceintl.vscode-language-pack-ko
-[21:06:28] Extension installed successfully: ms-ceintl.vscode-language-pack-ko file:///home/ubuntu/.vscode-server/extensions/extensions.json
-[21:06:28] Extension 'ms-ceintl.vscode-language-pack-ko' v1.95.2024103009 was successfully installed.
-[21:06:46] [<unknown>][6b356273][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
-[21:06:46] [<unknown>][6adaf137][ExtensionHostConnection] <20160> Extension Host Process exited with code: 0, signal: null.
-Cancelling previous shutdown timeout
-[21:06:46] Cancelling previous shutdown timeout
-Last EH closed, waiting before shutting down
-[21:06:46] Last EH closed, waiting before shutting down
-[21:06:59] [<unknown>][a2de2357][ManagementConnection] New connection established.
-[21:06:59] [<unknown>][ae5ac681][ExtensionHostConnection] New connection established.
-[21:06:59] [<unknown>][ae5ac681][ExtensionHostConnection] <20380> Launched Extension Host Process.
-[21:08:55] [<unknown>][a2de2357][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
-[21:08:55] [<unknown>][ae5ac681][ExtensionHostConnection] <20380> Extension Host Process exited with code: 0, signal: null.
-Cancelling previous shutdown timeout
-[21:08:55] Cancelling previous shutdown timeout
-Last EH closed, waiting before shutting down
-[21:08:55] Last EH closed, waiting before shutting down
-[21:08:56] [<unknown>][2c069e19][ManagementConnection] New connection established.
-[21:08:56] [<unknown>][5de2af87][ExtensionHostConnection] New connection established.
-[21:08:56] [<unknown>][5de2af87][ExtensionHostConnection] <20610> Launched Extension Host Process.
+[10:30:42] [<unknown>][3fd03419][ExtensionHostConnection] <2185775> Launched Extension Host Process.
+New EH opened, aborting shutdown
+[10:35:42] New EH opened, aborting shutdown
+[13:50:59] [<unknown>][3aa43693][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...

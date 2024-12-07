@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saramin Jobs</title>
+    <link rel="stylesheet" href="static/index.css">
+</head>
+<body>
+    <h1>채용공고</h1>
+    <form method="GET" action="/">
+        <label for="region">지역별:</label>
+        <select id="region" name="region">
+            <option value="">전체</option>
+            <option value="서울">서울</option>
+            <option value="경기">경기</option>
+            <!-- 다른 지역 추가 -->
+        </select>
+    
+        <label for="career">경력별:</label>
+        <select id="career" name="career">
+            <option value="">전체</option>
+            <option value="신입">신입</option>
+            <option value="경력">경력</option>
+        </select>
+    
+        <label for="salary">급여별:</label>
+        <select id="salary" name="salary">
+            <option value="">전체</option>
+            <option value="3000만원 이상">3000만원 이상</option>
+            <option value="4000만원 이상">4000만원 이상</option>
+        </select>
+    
+        <label for="tech_stack">기술스택별:</label>
+        <input type="text" id="tech_stack" name="tech_stack" placeholder="Java, Python, React...">
+    
+        <button type="submit">필터 적용</button>
+    </form>  
+
+    {% if joblist %}
+    <div class="job-grid">
+        {% for job in joblist %}
+        <div class="job-card">
+            <div class="inline-block">
+                <h2 class="title">{{ job[1] }}</h2>
+                <span class="subtitle">
+                    {% if job[2] is not none %}• {{ job[2] }}{% endif %}
+                    {% if job[3] is not none %}• {{ job[3] }}{% endif %} 
+                    {% if job[4] is not none %}• {{ job[4] }}{% endif %}
+                </span>
+            </div>
+            <h3 class="title">
+                <a href="{{ job[6] }}" target="_blank" class="job-link">{{ job[5] }}</a>
+            </h3>
+            <p class="details">• {{ job[7] }}</p>
+            <p class="details">⚑ {{ job[9] }}</p>
+            <p class="details">
+                ⚇ <span>{{ job[10] }}</span>
+                <span class="spaced">• {{ job[12] }}</span>
+            </p>
+            <p class="details">
+                ⚲ <span>{{ job[11] }}</span>
+                <span class="spaced">• {{ job[13] }}</span>
+            </p>
+            {% if job[8] is not none %}
+            <p class="badge">𐂅{{ job[8] }}</p>
+            {% endif %}
+            <div class="apply-button">
+                <a href="{{ job[6] }}" target="_blank">입사지원</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+        <p>No job data available</p>
+    {% endif %}
+
+    <!-- 페이지네이션 -->
+    <div class="pagination">
+        {% if current_range_start > 1 %}
+            <a href="/?page={{ current_range_start - 1 }}">Previous</a>
+        {% else %}
+            <a class="disabled">Previous</a>
+        {% endif %}
+
+        {% for page in range(current_range_start, current_range_end + 1) %}
+            <a href="/?page={{ page }}" class="{% if page == current_page %}active{% endif %}">{{ page }}</a>
+        {% endfor %}
+
+        {% if current_range_end < total_pages %}
+            <a href="/?page={{ current_range_end + 1 }}">Next</a>
+        {% else %}
+            <a class="disabled">Next</a>
+        {% endif %}
+    </div>
+</body>
+</html>

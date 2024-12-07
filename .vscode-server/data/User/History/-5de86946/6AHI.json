@@ -1,0 +1,172 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Saramin Jobs API",
+    "description": "API for Saramin job data",
+    "version": "1.0.0"
+  },
+  "host": "113.198.66.75:13048", 
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Register a new user",
+        "tags": ["Authentication"],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "username": { "type": "string" },
+                "password": { "type": "string" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "User registered successfully"
+          },
+          "500": {
+            "description": "Server error"
+          }
+        }
+      }
+    },
+    "/login": {
+      "post": {
+        "summary": "Login a user",
+        "tags": ["Authentication"],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "username": { "type": "string" },
+                "password": { "type": "string" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JWT token issued",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "access_token": { "type": "string" }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid credentials"
+          }
+        }
+      }
+    },
+    "/api/jobs": {
+      "get": {
+        "summary": "Retrieve job listings with pagination, filtering, and search",
+        "tags": ["Jobs"],
+        "parameters": [
+          { "name": "page", "in": "query", "type": "integer", "description": "Page number", "default": 1 },
+          { "name": "location", "in": "query", "type": "string", "description": "Filter by location" },
+          { "name": "experience", "in": "query", "type": "string", "description": "Filter by experience" },
+          { "name": "salary", "in": "query", "type": "string", "description": "Filter by salary" },
+          { "name": "sector", "in": "query", "type": "string", "description": "Filter by sector" },
+          { "name": "keyword", "in": "query", "type": "string", "description": "Search by keyword" },
+          { "name": "company", "in": "query", "type": "string", "description": "Search by company" },
+          { "name": "title", "in": "query", "type": "string", "description": "Search by title" }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of jobs",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": { "type": "integer" },
+                  "company": { "type": "string" },
+                  "title": { "type": "string" },
+                  "link": { "type": "string" },
+                  "location": { "type": "string" },
+                  "experience": { "type": "string" },
+                  "education": { "type": "string" },
+                  "employment_type": { "type": "string" },
+                  "deadline": { "type": "string" },
+                  "sector": { "type": "string" },
+                  "salary": { "type": "string" }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/jobs/{job_id}": {
+      "get": {
+        "summary": "Retrieve job details by ID",
+        "tags": ["Jobs"],
+        "parameters": [
+          {
+            "name": "job_id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "description": "Job ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Job details with related jobs",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": { "type": "integer" },
+                "company": { "type": "string" },
+                "title": { "type": "string" },
+                "link": { "type": "string" },
+                "location": { "type": "string" },
+                "experience": { "type": "string" },
+                "education": { "type": "string" },
+                "employment_type": { "type": "string" },
+                "deadline": { "type": "string" },
+                "sector": { "type": "string" },
+                "salary": { "type": "string" },
+                "related_jobs": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": { "type": "integer" },
+                      "company": { "type": "string" },
+                      "title": { "type": "string" },
+                      "location": { "type": "string" },
+                      "sector": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Job not found"
+          }
+        }
+      }
+    }
+  }
+}

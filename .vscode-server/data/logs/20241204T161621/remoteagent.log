@@ -1,0 +1,115 @@
+2024-12-04 16:16:21.884 [info] 
+
+
+
+
+2024-12-04 16:16:21.892 [info] Extension host agent started.
+2024-12-04 16:16:21.935 [info] [<unknown>][4f2c30be][ExtensionHostConnection] New connection established.
+2024-12-04 16:16:21.939 [info] [<unknown>][b0990b64][ManagementConnection] New connection established.
+2024-12-04 16:16:22.051 [info] [<unknown>][4f2c30be][ExtensionHostConnection] <1563058> Launched Extension Host Process.
+2024-12-04 16:16:22.195 [info] [<unknown>][4f2c30be][ExtensionHostConnection] <1563058><stderr> Error reading NLS messages file /home/ubuntu/.vscode-server/data/clp/3e5f309cded99583ab37e0d647ed0d1b.ko/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/nls.messages.json: Error: ENOENT: no such file or directory, open '/home/ubuntu/.vscode-server/data/clp/3e5f309cded99583ab37e0d647ed0d1b.ko/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/nls.messages.json'
+
+2024-12-04 16:21:21.898 [info] New EH opened, aborting shutdown
+2024-12-04 18:59:18.591 [info] [<unknown>][b0990b64][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2024-12-04 19:07:53.099 [info] [<unknown>][b0990b64][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2024-12-04 19:07:53.119 [info] [<unknown>][4f2c30be][ExtensionHostConnection] The client has reconnected.
+2024-12-04 19:07:53.124 [info] [<unknown>][b0990b64][ManagementConnection] The client has reconnected.
+2024-12-04 19:07:53.145 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/server-main.js:183:1060)
+    at process.emit (node:events:531:35)
+2024-12-04 19:07:54.192 [error] CodeExpectedError: Could not find pty 3 on pty host
+    at I.W (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:48:12233)
+    at I.updateIcon (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:48:7772)
+    at N.s.<computed> (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:48:2962)
+    at Object.call (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:31:4203)
+    at Jc.s (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78968)
+    at Jc.q (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78491)
+    at hs.value (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:77893)
+    at C.B (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:746)
+    at C.fire (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:964)
+    at process.w (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29137)
+    at process.emit (node:events:519:28)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2024-12-04 19:07:54.194 [error] CodeExpectedError: Could not find pty 3 on pty host
+    at I.W (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:48:12233)
+    at I.updateTitle (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:48:7722)
+    at N.s.<computed> (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:48:2962)
+    at Object.call (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:31:4203)
+    at Jc.s (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78968)
+    at Jc.q (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78491)
+    at hs.value (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:77893)
+    at C.B (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:746)
+    at C.fire (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:964)
+    at process.w (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29137)
+    at process.emit (node:events:519:28)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2024-12-04 19:07:54.195 [error] CodeExpectedError: Could not find pty 3 on pty host
+    at I.W (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:48:12233)
+    at I.updateTitle (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:48:7722)
+    at N.s.<computed> (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:48:2962)
+    at Object.call (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:31:4203)
+    at Jc.s (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78968)
+    at Jc.q (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78491)
+    at hs.value (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:77893)
+    at C.B (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:746)
+    at C.fire (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:964)
+    at process.w (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29137)
+    at process.emit (node:events:519:28)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2024-12-04 19:07:54.196 [error] CodeExpectedError: Could not find pty 3 on pty host
+    at I.W (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:48:12233)
+    at I.updateTitle (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:48:7722)
+    at N.s.<computed> (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:48:2962)
+    at Object.call (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:31:4203)
+    at Jc.s (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78968)
+    at Jc.q (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78491)
+    at hs.value (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:77893)
+    at C.B (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:746)
+    at C.fire (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:29:964)
+    at process.w (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29137)
+    at process.emit (node:events:519:28)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2024-12-04 19:58:52.863 [info] [<unknown>][b0990b64][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2024-12-04 20:10:34.444 [info] [<unknown>][b0990b64][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2024-12-04 20:10:34.450 [info] [<unknown>][9d6f34f6][ExtensionHostConnection] New connection established.
+2024-12-04 20:10:34.453 [info] [<unknown>][cd5b2d6f][ManagementConnection] New connection established.
+2024-12-04 20:10:34.465 [info] [<unknown>][9d6f34f6][ExtensionHostConnection] <1568400> Launched Extension Host Process.
+2024-12-04 20:10:34.644 [info] [<unknown>][9d6f34f6][ExtensionHostConnection] <1568400><stderr> Error reading NLS messages file /home/ubuntu/.vscode-server/data/clp/3e5f309cded99583ab37e0d647ed0d1b.ko/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/nls.messages.json: Error: ENOENT: no such file or directory, open '/home/ubuntu/.vscode-server/data/clp/3e5f309cded99583ab37e0d647ed0d1b.ko/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/nls.messages.json'
+
+2024-12-04 20:15:34.598 [info] [<unknown>][b0990b64][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+2024-12-04 20:15:34.989 [info] [<unknown>][4f2c30be][ExtensionHostConnection] <1563058> Extension Host Process exited with code: 0, signal: null.
+2024-12-04 20:43:44.450 [info] [<unknown>][cd5b2d6f][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2024-12-04 20:48:25.658 [info] [<unknown>][cd5b2d6f][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2024-12-04 20:48:25.663 [info] [<unknown>][e76d8fe6][ManagementConnection] New connection established.
+2024-12-04 20:48:25.669 [info] [<unknown>][b1b0e32b][ExtensionHostConnection] New connection established.
+2024-12-04 20:48:25.690 [info] [<unknown>][b1b0e32b][ExtensionHostConnection] <1569202> Launched Extension Host Process.
+2024-12-04 20:48:25.922 [info] [<unknown>][b1b0e32b][ExtensionHostConnection] <1569202><stderr> Error reading NLS messages file /home/ubuntu/.vscode-server/data/clp/3e5f309cded99583ab37e0d647ed0d1b.ko/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/nls.messages.json: Error: ENOENT: no such file or directory, open '/home/ubuntu/.vscode-server/data/clp/3e5f309cded99583ab37e0d647ed0d1b.ko/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/nls.messages.json'
+
+2024-12-04 20:53:25.844 [info] [<unknown>][cd5b2d6f][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+2024-12-04 20:53:26.105 [info] [<unknown>][9d6f34f6][ExtensionHostConnection] <1568400> Extension Host Process exited with code: 0, signal: null.
+2024-12-04 21:27:00.860 [info] [<unknown>][e76d8fe6][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-12-04 21:27:01.017 [info] [<unknown>][b1b0e32b][ExtensionHostConnection] <1569202> Extension Host Process exited with code: 0, signal: null.
+2024-12-04 21:27:01.019 [info] Last EH closed, waiting before shutting down
+2024-12-04 21:27:25.413 [info] [<unknown>][f874bdc7][ExtensionHostConnection] New connection established.
+2024-12-04 21:27:25.418 [info] [<unknown>][42d56fcb][ManagementConnection] New connection established.
+2024-12-04 21:27:25.431 [info] [<unknown>][f874bdc7][ExtensionHostConnection] <1571236> Launched Extension Host Process.
+2024-12-04 21:27:25.579 [info] [<unknown>][f874bdc7][ExtensionHostConnection] <1571236><stderr> Error reading NLS messages file /home/ubuntu/.vscode-server/data/clp/3e5f309cded99583ab37e0d647ed0d1b.ko/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/nls.messages.json: Error: ENOENT: no such file or directory, open '/home/ubuntu/.vscode-server/data/clp/3e5f309cded99583ab37e0d647ed0d1b.ko/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/nls.messages.json'
+
+2024-12-04 21:27:32.002 [info] [<unknown>][42d56fcb][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-12-04 21:27:32.081 [info] [<unknown>][f874bdc7][ExtensionHostConnection] <1571236> Extension Host Process exited with code: 0, signal: null.
+2024-12-04 21:27:32.083 [info] Cancelling previous shutdown timeout
+2024-12-04 21:27:32.083 [info] Last EH closed, waiting before shutting down
+2024-12-04 21:27:33.829 [info] [<unknown>][012fbb06][ExtensionHostConnection] New connection established.
+2024-12-04 21:27:33.841 [info] [<unknown>][012fbb06][ExtensionHostConnection] <1571379> Launched Extension Host Process.
+2024-12-04 21:27:33.852 [info] [<unknown>][ce963d9a][ManagementConnection] New connection established.
+2024-12-04 21:27:33.950 [info] [<unknown>][012fbb06][ExtensionHostConnection] <1571379><stderr> Error reading NLS messages file /home/ubuntu/.vscode-server/data/clp/3e5f309cded99583ab37e0d647ed0d1b.ko/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/nls.messages.json: Error: ENOENT: no such file or directory, open '/home/ubuntu/.vscode-server/data/clp/3e5f309cded99583ab37e0d647ed0d1b.ko/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/nls.messages.json'
+
+2024-12-04 21:32:32.090 [info] New EH opened, aborting shutdown
+2024-12-05 01:37:40.519 [info] [<unknown>][ce963d9a][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-12-05 01:37:40.653 [info] [<unknown>][012fbb06][ExtensionHostConnection] <1571379> Extension Host Process exited with code: 0, signal: null.
+2024-12-05 01:37:40.654 [info] Last EH closed, waiting before shutting down
+2024-12-05 01:42:40.662 [info] Last EH closed, shutting down
