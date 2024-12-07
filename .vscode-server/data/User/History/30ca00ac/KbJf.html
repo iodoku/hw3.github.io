@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>크롤링 결과</title>
+</head>
+<body>
+    <h1>"{{ keyword }}" 검색 결과</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>회사명</th>
+                <th>제목</th>
+                <th>지역</th>
+                <th>경력</th>
+                <th>학력</th>
+                <th>고용형태</th>
+                <th>마감일</th>
+                <th>직무분야</th>
+                <th>링크</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for job in jobs %}
+            <tr>
+                <td>{{ job['회사명'] }}</td>
+                <td>{{ job['제목'] }}</td>
+                <td>{{ job['지역'] }}</td>
+                <td>{{ job['경력'] }}</td>
+                <td>{{ job['학력'] }}</td>
+                <td>{{ job['고용형태'] }}</td>
+                <td>{{ job['마감일'] }}</td>
+                <td>{{ job['직무분야'] }}</td>
+                <td><a href="{{ job['링크'] }}" target="_blank">링크</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

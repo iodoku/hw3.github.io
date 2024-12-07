@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saramin Jobs</title>
+    <link rel="stylesheet" href="static/index.css">
+</head>
+<body>
+    <h1>채용공고</h1>
+    <form method="GET" action="/">
+        <label for="region">지역별:</label>
+        <select id="region" name="region">
+            <option value="">전체</option>
+            <option value="서울">서울</option>
+            <option value="경기">경기</option>
+            <!-- 다른 지역 추가 -->
+        </select>
+    
+        <label for="career">경력별:</label>
+        <select id="career" name="career">
+            <option value="">전체</option>
+            <option value="1">1년</option>
+            <option value="2">2년</option>
+            <option value="3">3년</option>
+            <option value="4">4년</option>
+            <option value="5">5년</option>
+            <option value="6">6년이상</option>
+        </select>
+    
+        <label for="salary">급여별:</label>
+        <select id="salary" name="salary">
+            <option value="">전체</option>
+            <option value="3000만원 이상">3000만원 이상</option>
+            <option value="4000만원 이상">4000만원 이상</option>
+            <option value="5000만원 이상">5000만원 이상</option>
+            <option value="6000만원 이상">6000만원 이상</option>
+        </select>
+
+        <label for="details">직무:</label>
+        <select id="details" name="details">
+            <option value="">전체</option>
+            <option value="0">기획•전략</option>
+            <option value="1">마케팅•홍보•조사</option>
+            <option value="2">회계•세무•재무</option>
+            <option value="3">인사•노무•HRD</option>
+            <option value="4">총무•범무•사무•HRD</option>
+            <option value="5">IT개발•데이터</option>
+            <option value="6">디자인</option>
+            <option value="7">영업•판매•무역</option>
+            <option value="8">고객상담•TM</option>
+            <option value="9">구매•자재•물류</option>
+            <option value="10">상품기획•MD</option>
+            <option value="11">운전•운송•배송</option>
+            <option value="12">서비스</option>
+            <option value="13">생산</option>
+            <option value="14">건설•건축</option>
+            <option value="15">의료</option>
+            <option value="16">연구•R&D</option>
+            <option value="17">교육</option>
+            <option value="18">미디어•문화•스포츠</option>
+            <option value="19">금융•보험</option>
+            <option value="20">공공•복지</option>
+        </select>
+    
+        <label for="tech_stack">기술스택별:</label>
+        <input type="text" id="tech_stack" name="tech_stack" placeholder="Java, Python, React...">
+    
+        <button type="submit">필터 적용</button>
+    </form>  
+
+    {% if joblist %}
+    <div class="job-grid">
+        {% for job in joblist %}
+        <div class="job-card">
+            <div class="inline-block">
+                <h2 class="title">{{ job[1] }}</h2>
+                <span class="subtitle">
+                    {% if job[2] is not none %}• {{ job[2] }}{% endif %}
+                    {% if job[3] is not none %}• {{ job[3] }}{% endif %} 
+                    {% if job[4] is not none %}• {{ job[4] }}{% endif %}
+                </span>
+            </div>
+            <h3 class="title">
+                <a href="{{ job[6] }}" target="_blank" class="job-link">{{ job[5] }}</a>
+            </h3>
+            <p class="details">• {{ job[7] }}</p>
+            <p class="details">⚑ {{ job[9] }}</p>
+            <p class="details">
+                ⚇ <span>{{ job[10] }}</span>
+                <span class="spaced1">• {{ job[13] }}</span>
+            </p>
+            <p class="details">
+                ⚲ <span>{{ job[11] }}</span>
+                <span class="spaced2">• {{ job[14] }}</span>
+            </p>
+            {% if job[8] is not none %}
+            <p class="badge">𐂅{{ job[8] }}</p>
+            {% endif %}
+            <div class="apply-button">
+                <a href="{{ job[6] }}" target="_blank">입사지원</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+        <p>No job data available</p>
+    {% endif %}
+
+    <!-- 페이지네이션 -->
+    <div class="pagination">
+        {% if current_range_start > 1 %}
+            <a href="/?page={{ current_range_start - 1 }}&region={{ request.args.get('region') }}">Previous</a>
+        {% else %}
+            <a class="disabled">Previous</a>
+        {% endif %}
+    
+        {% for page in range(current_range_start, current_range_end + 1) %}
+            <a href="/?page={{ page }}&region={{ request.args.get('region') }}" 
+               class="{% if page == current_page %}active{% endif %}">
+               {{ page }}
+            </a>
+        {% endfor %}
+    
+        {% if current_range_end < total_pages %}
+            <a href="/?page={{ current_range_end + 1 }}&region={{ request.args.get('region') }}">Next</a>
+        {% else %}
+            <a class="disabled">Next</a>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+   131.2ms (setup:858): 2024-12-06 10:40:22
+   131.3ms (setup:859): /usr/bin/pipx install flask
+   131.4ms (setup:860): pipx version is 1.4.3
+   131.4ms (setup:861): Default python interpreter is '/usr/bin/python3'
+   131.4ms (mkdir:74): creating directory /home/ubuntu/.local/share/pipx/venvs
+   131.5ms (mkdir:74): creating directory /home/ubuntu/.local/bin
+   131.6ms (mkdir:74): creating directory /home/ubuntu/.local/share/man
+   131.7ms (mkdir:74): creating directory /home/ubuntu/.cache/pipx
+   131.7ms (setup:870): Adding CACHEDIR.TAG to cache directory
+   132.5ms (package_name_from_spec:370): Determined package name: flask
+   132.6ms (package_name_from_spec:371): Package name determined in 0.0s
+   133.4ms (run_subprocess:168): running /usr/bin/python3 -m venv --without-pip /home/ubuntu/.local/share/pipx/venvs/flask
+   179.7ms (run_subprocess:190): stdout:
+   179.7ms (run_subprocess:192): stderr:
+   179.7ms (run_subprocess:193): returncode: 0
+   182.0ms (run_subprocess:168): running /usr/bin/python3 -m venv --clear /home/ubuntu/.local/share/pipx/shared
+  3058.5ms (run_subprocess:190): stdout:
+  3058.8ms (run_subprocess:192): stderr:
+  3058.9ms (run_subprocess:193): returncode: 0
+  3059.4ms (run_subprocess:168): running <checking pip's availability>
+  3075.6ms (run_subprocess:190): stdout: ModuleSpec(name='pip', loader=<_frozen_importlib_external.SourceFileLoader object at 0x7fb25fdffe60>, origin='/home/ubuntu/.local/share/pipx/shared/lib/python3.12/site-packages/pip/__init__.py', submodule_search_locations=['/home/ubuntu/.local/share/pipx/shared/lib/python3.12/site-packages/pip'])
+  3075.7ms (run_subprocess:193): returncode: 0
+  3076.0ms (upgrade:98): Upgrading shared libraries in /home/ubuntu/.local/share/pipx/shared
+  3079.4ms (run_subprocess:168): running /home/ubuntu/.local/share/pipx/shared/bin/python -m pip --no-input --disable-pip-version-check install --force-reinstall -q --upgrade pip >= 23.1
+  4923.7ms (run_subprocess:190): stdout:
+  4923.8ms (run_subprocess:192): stderr:
+  4923.9ms (run_subprocess:193): returncode: 0
+  4924.1ms (run_subprocess:168): running /home/ubuntu/.local/share/pipx/venvs/flask/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+  4943.2ms (run_subprocess:190): stdout: /home/ubuntu/.local/share/pipx/venvs/flask/lib/python3.12/site-packages
+  4943.3ms (run_subprocess:193): returncode: 0
+  4943.5ms (run_subprocess:168): running /home/ubuntu/.local/share/pipx/shared/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+  4960.6ms (run_subprocess:190): stdout: /home/ubuntu/.local/share/pipx/shared/lib/python3.12/site-packages
+  4960.7ms (run_subprocess:193): returncode: 0
+  4961.0ms (run_subprocess:168): running /home/ubuntu/.local/share/pipx/venvs/flask/bin/python --version
+  4966.3ms (run_subprocess:190): stdout: Python 3.12.3
+  4966.4ms (run_subprocess:192): stderr:
+  4966.4ms (run_subprocess:193): returncode: 0
+  4966.7ms (_parsed_package_to_package_or_url:137): cleaned package spec: flask
+  4967.1ms (run_subprocess:168): running /home/ubuntu/.local/share/pipx/venvs/flask/bin/python -m pip --no-input install flask
+  5995.7ms (run_subprocess:193): returncode: 0
+  5996.2ms (run_subprocess:168): running <fetch_info_in_venv commands>
+  6021.6ms (run_subprocess:190): stdout: {"sys_path": ["/usr/lib/python312.zip", "/usr/lib/python3.12", "/usr/lib/python3.12/lib-dynload", "/home/ubuntu/.local/share/pipx/venvs/flask/lib/python3.12/site-packages", "/home/ubuntu/.local/share/pipx/shared/lib/python3.12/site-packages"], "python_version": "3.12.3", "environment": {"implementation_name": "cpython", "implementation_version": "3.12.3", "os_name": "posix", "platform_machine": "x86_64", "platform_release": "6.8.0-39-generic", "platform_system": "Linux", "platform_version": "#39-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul  5 21:49:14 UTC 2024", "python_full_version": "3.12.3", "platform_python_implementation": "CPython", "python_version": "3.12", "sys_platform": "linux"}}
+  6021.6ms (run_subprocess:193): returncode: 0
+  6041.5ms (get_venv_metadata_for_package:339): get_venv_metadata_for_package: 45ms
+  6041.6ms (_parsed_package_to_package_or_url:137): cleaned package spec: flask
+  6042.7ms (run_subprocess:168): running <checking pip's availability>
+  6063.5ms (run_subprocess:190): stdout: ModuleSpec(name='pip', loader=<_frozen_importlib_external.SourceFileLoader object at 0x7592bf3ffe60>, origin='/home/ubuntu/.local/share/pipx/shared/lib/python3.12/site-packages/pip/__init__.py', submodule_search_locations=['/home/ubuntu/.local/share/pipx/shared/lib/python3.12/site-packages/pip'])
+  6063.5ms (run_subprocess:193): returncode: 0
+  6063.6ms (run_subprocess:168): running <checking pip's availability>
+  6084.7ms (run_subprocess:190): stdout: ModuleSpec(name='pip', loader=<_frozen_importlib_external.SourceFileLoader object at 0x72998fbb3ec0>, origin='/home/ubuntu/.local/share/pipx/shared/lib/python3.12/site-packages/pip/__init__.py', submodule_search_locations=['/home/ubuntu/.local/share/pipx/shared/lib/python3.12/site-packages/pip'])
+  6084.8ms (run_subprocess:193): returncode: 0
+  6085.8ms (warn_if_not_on_path:466): ⚠️  Note: '/home/ubuntu/.local/bin' is not on your PATH environment variable. These apps will not be globally accessible until your PATH is updated. Run `pipx ensurepath` to automatically add it, or manually modify your PATH in your shell's config file (i.e. ~/.bashrc).
+  6085.9ms (cli:932): pipx finished.

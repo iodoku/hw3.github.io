@@ -1,0 +1,38 @@
+2024-12-04 20:10:36.010 [info] [main] 로그 수준: Info
+2024-12-04 20:10:36.010 [info] [main] "git"에서 찾은 git 유효성을 검사하는 중
+2024-12-04 20:10:36.010 [info] [main] "2.43.0"에서 git "git"을(를) 사용하는 중
+2024-12-04 20:10:36.010 [info] [Model][doInitialScan] Initial repository scan started
+2024-12-04 20:10:36.010 [info] > git rev-parse --show-toplevel [6ms]
+2024-12-04 20:10:36.010 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2024-12-04 20:10:36.018 [info] [Model][openRepository] Opened repository: /home/ubuntu
+2024-12-04 20:10:36.030 [info] > git config --get commit.template [3ms]
+2024-12-04 20:10:36.032 [info] > git rev-parse --show-toplevel [3ms]
+2024-12-04 20:10:36.049 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-12-04 20:10:36.055 [info] > git rev-parse --show-toplevel [1ms]
+2024-12-04 20:10:36.073 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [8ms]
+2024-12-04 20:10:36.074 [info] > git rev-parse --show-toplevel [16ms]
+2024-12-04 20:10:36.085 [info] > git rev-parse --show-toplevel [1ms]
+2024-12-04 20:10:36.103 [info] > git rev-parse --show-toplevel [8ms]
+2024-12-04 20:10:36.113 [info] > git status -z -uall [51ms]
+2024-12-04 20:10:36.113 [info] > git rev-parse --show-toplevel [7ms]
+2024-12-04 20:10:36.671 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [434ms]
+2024-12-04 20:10:36.686 [info] > git config --local branch.main.vscode-merge-base [12ms]
+2024-12-04 20:10:36.686 [warning] [Git][config] git config failed: Failed to execute git
+2024-12-04 20:10:36.689 [info] > git config --get commit.template [30ms]
+2024-12-04 20:10:36.689 [info] > git rev-parse --show-toplevel [32ms]
+2024-12-04 20:10:36.693 [info] > git check-ignore -v -z --stdin [10ms]
+2024-12-04 20:10:36.700 [info] > git rev-parse --show-toplevel [8ms]
+2024-12-04 20:10:36.700 [info] > git reflog main --grep-reflog=branch: Created from *. [11ms]
+2024-12-04 20:10:36.707 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [4ms]
+2024-12-04 20:10:36.707 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2024-12-04 20:10:36.707 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2024-12-04 20:10:36.711 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [13ms]
+2024-12-04 20:10:36.715 [info] > git rev-parse --show-toplevel [10ms]
+2024-12-04 20:10:36.718 [info] > git merge-base refs/heads/main refs/remotes/origin/main [8ms]
+2024-12-04 20:10:36.722 [info] > git diff --name-status -z --diff-filter=ADMR 46e7b5737007e12c6ab7612118e9bc1ace9d020f...refs/remotes/origin/main [0ms]
+2024-12-04 20:10:36.722 [info] > git rev-parse --show-toplevel [5ms]
+2024-12-04 20:10:36.725 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-12-04 20:10:36.731 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [0ms]
+2024-12-04 20:10:36.783 [info] > git status -z -uall [55ms]
+2024-12-04 20:10:36.887 [info] > git show --textconv :static/swagger.json [5ms]
+2024-12-04 20:10:36.888 [info] > git ls-files --stage -- /home/ubuntu/static/swagger.json [2ms]

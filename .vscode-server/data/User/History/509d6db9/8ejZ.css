@@ -1,0 +1,121 @@
+table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5열 */
+    gap: 20px; /* 카드 간격 */
+    margin-bottom: 20px;
+}
+.job-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 445px; /* 카드 너비 */
+    height: 220px; /* 카드 높이 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.job-card h2 {
+    font-size: 18px;
+    margin: 0;
+}
+.job-card .details {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+.job-card .badge {
+    background-color: #ff6666;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.job-card .apply-button {
+    margin-top: 15px;
+    text-align: right;
+}
+.job-card .apply-button a {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+.pagination a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.pagination a.disabled {
+    background-color: #ccc;
+    pointer-events: none;
+}
+.pagination a.active {
+    background-color: #555;
+    pointer-events: none;
+}
+.inline-block {
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    gap: 10px; /* 항목 간 간격 */
+}
+
+.title {
+    font-size: 15px;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 14px; /* 옆에 있는 텍스트 크기 조정 */
+    color: rgb(20, 19, 19); /* (선택사항) 보조 텍스트 색상 */
+    font-weight:600
+}
+.details {
+    font-size: 12px; /* 옆에 있는 텍스트 크기 조정 */
+    display: grid;
+    grid-template-columns: auto auto; /* 두 개의 열 */
+    align-items: center; /* 세로 정렬 */
+}
+.details .spaced {
+    justify-self: end; /* 우측 정렬 */
+}

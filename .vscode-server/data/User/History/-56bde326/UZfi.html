@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Saramin Job Listings</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Job Listings</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>회사명</th>
+                <th>제목</th>
+                <th>링크</th>
+                <th>지역</th>
+                <th>경력</th>
+                <th>학력</th>
+                <th>고용형태</th>
+                <th>마감일</th>
+                <th>직무분야</th>
+                <th>등록일</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for job in jobs %}
+            <tr>
+                <td>{{ job.company }}</td>
+                <td>{{ job.title }}</td>
+                <td><a href="{{ job.link }}" target="_blank">링크</a></td>
+                <td>{{ job.location }}</td>
+                <td>{{ job.experience }}</td>
+                <td>{{ job.education }}</td>
+                <td>{{ job.employment_type }}</td>
+                <td>{{ job.deadline }}</td>
+                <td>{{ job.sector }}</td>
+                <td>{{ job.salary }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

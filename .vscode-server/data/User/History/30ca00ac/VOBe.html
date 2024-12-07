@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사람인 크롤러 결과</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <!-- 상단 배너 -->
+        <div class="row mb-3">
+            <div class="col-12">
+                <div class="bg-primary text-white text-center py-3">
+                    <h1>사람인 채용 공고</h1>
+                    <p>키워드로 최신 채용 정보를 확인하세요!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 검색 결과 -->
+        <div class="row">
+            {% for job in jobs %}
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ job['회사명'] }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ job['제목'] }}</h6>
+                        <p class="card-text">
+                            <strong>지역:</strong> {{ job['지역'] }}<br>
+                            <strong>경력:</strong> {{ job['경력'] }}<br>
+                            <strong>학력:</strong> {{ job['학력'] }}<br>
+                            <strong>마감일:</strong> {{ job['마감일'] }}<br>
+                        </p>
+                        <a href="{{ job['링크'] }}" class="btn btn-primary" target="_blank">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- 페이지 하단 -->
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p>&copy; 2024 사람인 크롤러. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

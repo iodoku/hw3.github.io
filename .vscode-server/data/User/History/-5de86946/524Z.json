@@ -1,0 +1,38 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Saramin Jobs API",
+    "description": "API documentation for Saramin Jobs"
+  },
+  "host": "localhost:5000",
+  "basePath": "/",
+  "schemes": ["http"],
+  "paths": {
+    "/auth/register": {
+      "post": {
+        "summary": "회원가입",
+        "description": "회원 정보를 저장합니다.",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "username": { "type": "string" },
+                "email": { "type": "string" },
+                "password": { "type": "string" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": { "description": "User registered successfully" },
+          "400": { "description": "Invalid email format or email already exists" }
+        }
+      }
+    }
+  }
+}

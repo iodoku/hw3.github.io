@@ -1,0 +1,101 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Saramin Jobs API",
+    "description": "API for managing and retrieving job data from Saramin",
+    "version": "1.0.0"
+  },
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header",
+      "description": "JWT Authorization header using the Bearer scheme. Example: \"Bearer {token}\""
+    }
+  },
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Register a new user",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "username": { "type": "string" },
+                "password": { "type": "string" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": { "description": "User registered successfully" },
+          "500": { "description": "Internal server error" }
+        }
+      }
+    },
+    "/login": {
+      "post": {
+        "summary": "Login a user",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "username": { "type": "string" },
+                "password": { "type": "string" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JWT token issued",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "access_token": { "type": "string" }
+              }
+            }
+          },
+          "401": { "description": "Invalid credentials" }
+        }
+      }
+    },
+    "/api/jobs": {
+      "get": {
+        "summary": "Retrieve job listings with pagination, filtering, and search",
+        "parameters": [
+          {"name": "page", "in": "query", "type": "integer", "default": 1},
+          {"name": "location", "in": "query", "type": "string"},
+          {"name": "experience", "in": "query", "type": "string"},
+          {"name": "salary", "in": "query", "type": "string"},
+          {"name": "sector", "in": "query", "type": "string"},
+          {"name": "keyword", "in": "query", "type": "string"},
+          {"name": "company", "in": "query", "type": "string"},
+          {"name": "title", "in": "query", "type": "string"}
+        ],
+        "responses": {
+          "200": {"description": "List of jobs"}
+        }
+      }
+    },
+    "/api/jobs/{job_id}": {
+      "get": {
+        "summary": "Retrieve job details by ID",
+        "parameters": [
+          {"name": "job_id", "in": "path", "required": true, "type": "integer"}
+        ],
+        "responses": {
+          "200": {"description": "Job details with related jobs"}
+        }
+      }
+    }
+  }
+}

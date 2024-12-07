@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saramin Jobs</title>
+    <link rel="stylesheet" href="static/index.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .job-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5열 */
+            gap: 20px; /* 카드 간격 */
+            margin-bottom: 20px;
+        }
+        .job-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 445px; /* 카드 너비 */
+            height: 220px; /* 카드 높이 */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .job-card h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+        .job-card .details {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        .job-card .badge {
+            background-color: #ff6666;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .job-card .apply-button {
+            margin-top: 15px;
+            text-align: right;
+        }
+        .job-card .apply-button a {
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+        .pagination {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .pagination a {
+            display: inline-block;
+            margin: 0 5px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .pagination a.disabled {
+            background-color: #ccc;
+            pointer-events: none;
+        }
+        .pagination a.active {
+            background-color: #555;
+            pointer-events: none;
+        }
+        .inline-block {
+            display: flex;
+            align-items: center; /* 세로 중앙 정렬 */
+            gap: 10px; /* 항목 간 간격 */
+        }
+        
+        .title {
+            font-size: 15px;
+            margin: 0;
+        }
+        
+        .subtitle {
+            font-size: 14px; /* 옆에 있는 텍스트 크기 조정 */
+            color: rgb(20, 19, 19); /* (선택사항) 보조 텍스트 색상 */
+            font-weight:600
+        }
+    </style>
+</head>
+<body>
+    <h1>Saramin Jobs</h1>
+
+    {% if joblist %}
+    <div class="job-grid">
+        {% for job in joblist %}
+        <div class="job-card">
+            <div class="inline-block">
+                <h2 class="title">{{ job[1] }}</h2>
+                <span class="subtitle">
+                    {% if job[2] is not none %}• {{ job[2] }}{% endif %}
+                    {% if job[3] is not none %}• {{ job[3] }}{% endif %} 
+                    {% if job[4] is not none %}• {{ job[4] }}{% endif %}
+                </span>
+            </div>
+            <h3 class="title">
+                <a href="{{ job[6] }}" target="_blank" class="job-link">{{ job[5] }}</a>
+            </h3>
+            <p class="details">Location: {{ job[9] }} | Career: {{ job[10] }} | Education: {{ job[11] }}</p>
+            <p class="badge">{{ job[8] }}</p>
+            <p class="details">Details: {{ job[7] }}</p>
+            <div class="apply-button">
+                <a href="{{ job[6] }}" target="_blank">Apply Now</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+        <p>No job data available</p>
+    {% endif %}
+
+    <!-- 페이지네이션 -->
+    <div class="pagination">
+        {% if current_range_start > 1 %}
+            <a href="/?page={{ current_range_start - 1 }}">Previous</a>
+        {% else %}
+            <a class="disabled">Previous</a>
+        {% endif %}
+
+        {% for page in range(current_range_start, current_range_end + 1) %}
+            <a href="/?page={{ page }}" class="{% if page == current_page %}active{% endif %}">{{ page }}</a>
+        {% endfor %}
+
+        {% if current_range_end < total_pages %}
+            <a href="/?page={{ current_range_end + 1 }}">Next</a>
+        {% else %}
+            <a class="disabled">Next</a>
+        {% endif %}
+    </div>
+</body>
+</html>
