@@ -1,0 +1,127 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Saramin Jobs API",
+    "description": "API for managing and retrieving job data from Saramin",
+    "version": "1.0.0"
+  },
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header",
+      "description": "JWT Authorization header using the Bearer scheme. Example: \"Bearer {token}\""
+    }
+  },
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Register a new user",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "username": { "type": "string" },
+                "password": { "type": "string" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": { "description": "User registered successfully" },
+          "500": { "description": "Internal server error" }
+        }
+      }
+    },
+    "/login": {
+      "post": {
+        "summary": "Login a user",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "username": { "type": "string" },
+                "password": { "type": "string" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JWT token issued",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "access_token": { "type": "string" }
+              }
+            }
+          },
+          "401": { "description": "Invalid credentials" }
+        }
+      }
+    },
+    "/api/jobs": {
+      "get": {
+        "summary": "Retrieve all jobs",
+        "security": [{ "Bearer": [] }],
+        "responses": {
+          "200": {
+            "description": "List of jobs",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": { "type": "integer" },
+                  "company": { "type": "string" },
+                  "title": { "type": "string" },
+                  "link": { "type": "string" },
+                  "location": { "type": "string" },
+                  "experience": { "type": "string" },
+                  "education": { "type": "string" },
+                  "employment_type": { "type": "string" },
+                  "deadline": { "type": "string" },
+                  "sector": { "type": "string" },
+                  "salary": { "type": "string" }
+                }
+              }
+            }
+          },
+          "401": { "description": "Unauthorized" }
+        }
+      }
+    },
+    "/api/jobs/crawl": {
+      "post": {
+        "summary": "Crawl and store jobs",
+        "security": [{ "Bearer": [] }],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "keyword": { "type": "string", "example": "python" },
+                "pages": { "type": "integer", "example": 1 }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": { "description": "Data crawled and stored successfully" },
+          "500": { "description": "Internal server error" }
+        }
+      }
+    }
+  }
+}

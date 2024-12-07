@@ -1,0 +1,60 @@
+2024-12-03 17:33:36.882 [info] 
+
+
+
+
+2024-12-03 17:33:36.890 [info] Extension host agent started.
+2024-12-03 17:33:36.949 [error] [<unknown>][edeba2b3][ManagementConnection] Unknown reconnection token (never seen).
+2024-12-03 17:33:36.954 [error] [<unknown>][d5544d01][ExtensionHostConnection] Unknown reconnection token (never seen).
+2024-12-03 17:33:42.198 [info] [<unknown>][538706de][ExtensionHostConnection] New connection established.
+2024-12-03 17:33:42.201 [info] [<unknown>][757c30da][ManagementConnection] New connection established.
+2024-12-03 17:33:42.238 [info] [<unknown>][538706de][ExtensionHostConnection] <1035130> Launched Extension Host Process.
+2024-12-03 17:33:46.089 [error] Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1607:16)
+2024-12-03 17:33:46.091 [error] Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1607:16)
+2024-12-03 17:33:46.324 [error] Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1607:16)
+2024-12-03 17:38:36.895 [info] New EH opened, aborting shutdown
+2024-12-03 17:38:36.900 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/server-main.js:183:1060)
+    at process.emit (node:events:531:35)
+2024-12-03 19:10:59.262 [info] [<unknown>][757c30da][ManagementConnection] The client has reconnected.
+2024-12-03 19:11:14.940 [info] [<unknown>][538706de][ExtensionHostConnection] The client has reconnected.
+2024-12-03 21:38:59.789 [info] [<unknown>][757c30da][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-12-03 21:38:59.922 [info] [<unknown>][538706de][ExtensionHostConnection] <1035130> Extension Host Process exited with code: 0, signal: null.
+2024-12-03 21:38:59.924 [info] Last EH closed, waiting before shutting down
+2024-12-03 21:39:16.326 [info] [<unknown>][a4994a6e][ManagementConnection] New connection established.
+2024-12-03 21:39:16.330 [info] [<unknown>][8ea27bed][ExtensionHostConnection] New connection established.
+2024-12-03 21:39:16.348 [info] [<unknown>][8ea27bed][ExtensionHostConnection] <1044156> Launched Extension Host Process.
+2024-12-03 21:43:59.931 [info] New EH opened, aborting shutdown
+2024-12-03 21:44:15.954 [info] [<unknown>][a4994a6e][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-12-03 21:44:16.077 [info] [<unknown>][8ea27bed][ExtensionHostConnection] <1044156> Extension Host Process exited with code: 0, signal: null.
+2024-12-03 21:44:16.078 [info] Last EH closed, waiting before shutting down
+2024-12-03 21:44:20.501 [info] [<unknown>][620a89fc][ExtensionHostConnection] New connection established.
+2024-12-03 21:44:20.510 [info] [<unknown>][620a89fc][ExtensionHostConnection] <1044772> Launched Extension Host Process.
+2024-12-03 21:44:20.513 [info] [<unknown>][189be95f][ManagementConnection] New connection established.
+2024-12-03 21:49:16.085 [info] New EH opened, aborting shutdown
+2024-12-03 21:51:42.369 [info] [<unknown>][189be95f][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-12-03 21:51:42.504 [info] [<unknown>][620a89fc][ExtensionHostConnection] <1044772> Extension Host Process exited with code: 0, signal: null.
+2024-12-03 21:51:42.505 [info] Last EH closed, waiting before shutting down
+2024-12-03 21:52:01.920 [info] [<unknown>][c2f00ad2][ManagementConnection] New connection established.
+2024-12-03 21:52:01.925 [info] [<unknown>][483cd4c4][ExtensionHostConnection] New connection established.
+2024-12-03 21:52:01.936 [info] [<unknown>][483cd4c4][ExtensionHostConnection] <1045557> Launched Extension Host Process.
+2024-12-03 21:56:42.514 [info] New EH opened, aborting shutdown
+2024-12-03 22:57:40.646 [info] [<unknown>][c2f00ad2][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-12-03 22:57:40.776 [info] [<unknown>][483cd4c4][ExtensionHostConnection] <1045557> Extension Host Process exited with code: 0, signal: null.
+2024-12-03 22:57:40.778 [info] Last EH closed, waiting before shutting down
+2024-12-03 22:58:36.965 [info] [<unknown>][2c972ab7][ExtensionHostConnection] New connection established.
+2024-12-03 22:58:36.981 [info] [<unknown>][2c972ab7][ExtensionHostConnection] <1047012> Launched Extension Host Process.
+2024-12-03 22:58:36.985 [info] [<unknown>][7e4b817a][ManagementConnection] New connection established.
+2024-12-03 23:02:40.785 [info] New EH opened, aborting shutdown
+2024-12-03 23:34:21.026 [info] [<unknown>][19ba30c2][ManagementConnection] New connection established.
+2024-12-03 23:34:21.034 [info] [<unknown>][875ed35e][ExtensionHostConnection] New connection established.
+2024-12-03 23:34:21.054 [info] [<unknown>][875ed35e][ExtensionHostConnection] <1049331> Launched Extension Host Process.
+2024-12-03 23:34:26.516 [info] [<unknown>][19ba30c2][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-12-03 23:34:26.639 [info] [<unknown>][875ed35e][ExtensionHostConnection] <1049331> Extension Host Process exited with code: 0, signal: null.
+2024-12-04 00:11:59.767 [info] [<unknown>][7e4b817a][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-12-04 00:11:59.926 [info] [<unknown>][2c972ab7][ExtensionHostConnection] <1047012> Extension Host Process exited with code: 0, signal: null.
+2024-12-04 00:11:59.927 [info] Last EH closed, waiting before shutting down
+2024-12-04 00:16:59.940 [info] Last EH closed, shutting down

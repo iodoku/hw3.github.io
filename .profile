@@ -25,3 +25,6 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+# Created by `pipx` on 2024-12-06 01:40:58
+export PATH="$PATH:/home/ubuntu/.local/bin"
