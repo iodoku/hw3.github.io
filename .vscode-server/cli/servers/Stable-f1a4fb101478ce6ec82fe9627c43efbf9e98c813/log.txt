@@ -5,30 +5,19 @@
 * the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
 * the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
 *
-Server bound to /tmp/code-b9574dca-62bb-4891-8cad-b310e3868e6f
-Extension host agent listening on /tmp/code-b9574dca-62bb-4891-8cad-b310e3868e6f
+Server bound to /tmp/code-87ccaecb-5106-499e-9eba-f82870723afa
+Extension host agent listening on /tmp/code-87ccaecb-5106-499e-9eba-f82870723afa
 
-[10:30:42] 
-
-
+[02:29:07] 
 
 
-[10:30:42] Extension host agent started.
-[10:30:42] [<unknown>][3aa43693][ManagementConnection] New connection established.
-[10:30:42] [<unknown>][3fd03419][ExtensionHostConnection] New connection established.
-[10:30:42] Deleted uninstalled extension from disk cweijan.vscode-mysql-client2 /home/ubuntu/.vscode-server/extensions/cweijan.vscode-mysql-client2-7.7.3
-Generating translation files failed. Error: ENOENT: no such file or directory, open '/home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/nls.keys.json'
-    at async open (node:internal/fs/promises:639:25)
-    at async Object.readFile (node:internal/fs/promises:1242:14)
-    at async Nv (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/server-main.js:3:16834)
-    at async o8 (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/server-main.js:67:36551)
-    at async jh.start (file:///home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/server-main.js:67:39717) {
-  errno: -2,
-  code: 'ENOENT',
-  syscall: 'open',
-  path: '/home/ubuntu/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/nls.keys.json'
-}
-[10:30:42] [<unknown>][3fd03419][ExtensionHostConnection] <2185775> Launched Extension Host Process.
+
+
+[02:29:07] Extension host agent started.
+[02:29:07] [<unknown>][79165076][ManagementConnection] New connection established.
+[02:29:07] [<unknown>][7dd6dcc4][ExtensionHostConnection] New connection established.
+[02:29:08] [<unknown>][7dd6dcc4][ExtensionHostConnection] <2284095> Launched Extension Host Process.
+[02:29:08] [<unknown>][7dd6dcc4][ExtensionHostConnection] <2284095><stderr> Error reading NLS messages file /home/ubuntu/.vscode-server/data/clp/3e5f309cded99583ab37e0d647ed0d1b.ko/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/nls.messages.json: Error: ENOENT: no such file or directory, open '/home/ubuntu/.vscode-server/data/clp/3e5f309cded99583ab37e0d647ed0d1b.ko/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/nls.messages.json'
+
 New EH opened, aborting shutdown
-[10:35:42] New EH opened, aborting shutdown
-[13:50:59] [<unknown>][3aa43693][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[02:34:07] New EH opened, aborting shutdown

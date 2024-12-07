@@ -308,3 +308,116 @@ python app.py
 mysql -u jdh -p -h 113.198.66.75 -P 13048
 python app.py
 mysql -u jdh -p -h 113.198.66.75 -P 13048
+source myenv/bin/activate
+python app.py
+mysql -u jdh -p -h 113.198.66.75 -P 13048
+python app.py
+mysql -u jdh -p -h 113.198.66.75 -P 13048
+python app.py
+mysql -u jdh -p -h 113.198.66.75 -P 13048
+python app.py
+python jobcrawl.py
+ping www.saramin.co.kr
+python jobcrawl.py
+curl -I https://www.saramin.co.kr
+python jobcrawl.py
+curl -I https://www.saramin.co.kr
+curl -I https://www.google.com
+curl -I https://www.saramin.co.kr
+telnet www.saramin.co.kr 443
+curl -I https://www.saramin.co.kr
+python jobcrawl.py
+python app.py
+sudo apt update
+sudo apt install tor
+sudo nano /etc/tor/torrc
+tor --hash-password "your_password"
+HashedControlPassword 16:9B9133F8FA66EE103527AB52DDC5E3A7F551CBE303B65E72499CE1701C
+sudo systemctl restart tor
+sudo systemctl status tor
+python app.py
+curl --socks5-hostname 127.0.0.1:9050 http://httpbin.org/ip
+python app.py
+sudo systemctl status tor
+pip install requests[socks]
+python app.py
+sudo systemctl status tor
+curl --socks5-hostname 127.0.0.1:9050 http://httpbin.org/ip
+sudo systemctl status tor
+sudo journalctl -xeu tor
+sudo systemctl status tor@default
+curl --socks5-hostname 127.0.0.1:9050 http://httpbin.org/ip
+sudo nano /etc/tor/torrc
+sudo journalctl -u tor@default
+curl --socks5-hostname 127.0.0.1:9050 http://httpbin.org/ip
+sudo ufw status
+sudo ufw allow 9050
+curl --socks5-hostname 127.0.0.1:9050 http://httpbin.org/ip
+torify curl http://httpbin.org/ip
+sudo nano /etc/tor/torrc
+sudo systemctl restart tor@default
+torify curl http://httpbin.org/ip
+sudo nano /etc/tor/torrc
+sudo systemctl restart tor@default
+torify curl http://httpbin.org/ip
+nslookup httpbin.org
+torify curl http://34.224.200.202
+pip install fake-useragent
+python app.py
+python jobcrawl.py
+python app.py
+mysql -u jdh -p -h 113.198.66.75 -P 13048
+python app.py
+mysql -u jdh -p -h 113.198.66.75 -P 13048
+python app.py
+mysql -u jdh -p -h 113.198.66.75 -P 13048
+python app.py
+mysql -u jdh -p -h 113.198.66.75 -P 13048
+python app.py
+mysql -u jdh -p -h 113.198.66.75 -P 13048
+python app.py
+mysql -u jdh -p -h 113.198.66.75 -P 13048
+python app.py
+mysql -u jdh -p -h 113.198.66.75 -P 13048
+python app.py
+mysql -u jdh -p -h 113.198.66.75 -P 13048
+python app.py
+mysql -u jdh -p -h 113.198.66.75 -P 13048
+python app.py
+mysql -u jdh -p -h 113.198.66.75 -P 13048
+python app.py
+mysql -u jdh -p -h 113.198.66.75 -P 13048
+python app.py
+mysql -u jdh -p -h 113.198.66.75 -P 13048
+python app.py
+git init
+git status
+git add .
+git commit -m "Initial commit"
+git push origin develop
+git branch
+git checkout -b develop
+git add . 
+git commit -m "update"
+git push origin develop
+git remote set-url origin https://iodoku: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x@github.com/iodoku/hw3.github.io.git
+git config --global credential.helper store
+git push origin develop
+git remote -v
+git push origin develop
+git remote set-url origin https://iodoku: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x@github.com/iodoku/hw3.github.io.git
+git credential-cache exit
+git remote -v
+git push origin develop
+git remote set-url origin https://iodoku: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x@github.com/iodoku/hw3.github.io.git
+git push origin develop
+git remote set-url origin git@github.com:iodoku/hw3.github.io.git
+git push origin develop
+ls ~/.ssh/id_rsa.pub
+git remote set-url origin https://iodoku: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x@github.com/iodoku/hw3.github.io.git
+git push origin develop
+ssh-keygen -t rsa -b 4096 -C "jdhi0112@naver.com"
+cat ~/.ssh/id_rsa.pub
+ssh -T git@github.com
+git remote set-url origin git@github.com:iodoku/hw3.github.io.git
+git push origin develop
