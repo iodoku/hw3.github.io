@@ -405,16 +405,13 @@ git config --global credential.helper store
 git push origin develop
 git remote -v
 git push origin develop
-git remote set-url origin https://iodoku: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x@github.com/iodoku/hw3.github.io.git
 git credential-cache exit
 git remote -v
 git push origin develop
-git remote set-url origin https://iodoku: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x@github.com/iodoku/hw3.github.io.git
 git push origin develop
 git remote set-url origin git@github.com:iodoku/hw3.github.io.git
 git push origin develop
 ls ~/.ssh/id_rsa.pub
-git remote set-url origin https://iodoku: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x@github.com/iodoku/hw3.github.io.git
 git push origin develop
 ssh-keygen -t rsa -b 4096 -C "jdhi0112@naver.com"
 cat ~/.ssh/id_rsa.pub
