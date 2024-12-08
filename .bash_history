@@ -540,3 +540,111 @@ git rm --cached .ssh/id_rsa
 git filter-repo --path .ssh/id_rsa --invert-paths
 git push -u origin main
 cp -r ~/hw3.github.io ~/hw3.github.io-backup
+source myenv/bin/activate
+git add .
+git commit -m "update"
+git push origin develop
+git branch
+git checkout -b develop
+git push origin develop
+git rev-list --objects --all | grep "blobid"
+git filter-repo --path path/to/secret/file --invert-paths
+pip install git-filter-repo
+git lfs install
+sudo apt update
+sudo apt install git-lfs
+git lfs install
+git lfs track "*.node"
+git add .gitattributes
+git commit -m "Track large files with Git LFS"
+git push origin develop
+git checkout develop
+git checkout -b main
+git push origin main
+git remote set-url origin https://iodoku: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@github.com/iodoku/hw3.github.io.git
+git remote -v
+git push origin main
+git add .
+pip install bcc==0.29.1
+pip install bcc==
+bcc==0.1.10
+pip install -r requirements.txt
+pip install cloud-init==
+pip install -r requirements.txt
+sudo apt update
+sudo apt install libdbus-1-dev
+pip install meson ninja
+pip install -r requirements.txt
+git add .
+git commit -m "update"
+git push origin develop
+rm -f .git-credentials
+git filter-repo --path .git-credentials --invert-paths
+pip install git-filter-repo
+https://github.com/iodoku/hw3.github.io/security/secret-scanning/unblock-secret/...
+git add .
+git commit -m "update"
+git push origin develop
+rm -f .git-credentials
+echo ".git-credentials" >> .gitignore
+git add .gitignore
+git commit -m "Add .gitignore to ignore sensitive files"
+pip install git-filter-repo
+git filter-repo --path .git-credentials --invert-paths
+git reset --soft HEAD~1
+git rm --cached .git-credentials
+git status
+git commit -m "Update .gitignore to ignore sensitive files"
+git rm --cached .vscode-server/data/logs/20241208T101612/exthost1/vscode.git/Git.log
+echo ".vscode-server/data/logs/" >> .gitignore
+git add .gitignore
+git commit -m "Ignore VSCode log files"
+git push origin develop
+git filter-repo --path .git-credentials --invert-paths --force
+git push origin develop --force
+git remote -v
+git remote add origin https://github.com/iodoku/hw3.github.io.git
+git push origin develop --force
+git remote -v
+nano .vscode-server/data/logs/20241208T101612/exthost1/vscode.git/Git.log
+sudo apt update
+sudo apt install libdbus-1-dev
+pip install --upgrade meson ninja
+sudo apt install pkg-config
+sudo apt install cmake
+pip install --upgrade meson ninja
+sudo apt install pkg-config
+cat /tmp/pip-install-*/dbus-python_*/meson-logs/meson-log.txt
+export TMPDIR=$(mktemp -d)
+pip install dbus-python
+ls -l $TMPDIR/pip-install-*/dbus-python_*/meson-logs/
+sudo apt update
+sudo apt install libglib2.0-dev
+pip install dbus-python
+pip install -r requirements.txt
+sudo apt install python3-distro-info
+sudo apt update
+sudo apt install python3-distro-info
+python3 -c "import distro_info; print(distro_info.__file__)"
+dpkg -L python3-distro-info
+export PYTHONPATH=/usr/lib/python3/dist-packages:$PYTHONPATH
+python3 -c "import distro_info; print(distro_info.__file__)"
+pip install -r requirements.txt
+git status
+git add .
+git commit -m "Set up environment and update dependencies"
+git push origin develop
+git pull origin develop
+git add .
+git commit -m "Resolve merge conflicts"
+git pull origin develop
+git add .
+git commit -m "Resolve merge conflicts"
+git push origin develop
+git pull origin develop
+git push origin develop --force
+sudo apt update
+sudo apt install libdbus-1-dev libdbus-glib-1-dev
+git add .
+git commit -m "Resolve merge conflicts"
+sudo reboot
