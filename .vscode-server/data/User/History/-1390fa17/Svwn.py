@@ -167,7 +167,7 @@ def get_bookmarks():
         FROM bookmarks b
         JOIN jobs j ON b.job_id = j.id
         WHERE b.user_id = %s
-        ORDER BY b.created_at DESC11111
+        ORDER BY b.created_at DESC
         LIMIT %s OFFSET %s
     """, (user_id, page_size, offset))
     bookmarks = cursor.fetchall()
