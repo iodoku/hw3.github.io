@@ -10,3 +10,7 @@
 2024-12-08 02:29:08.194 [info] [<unknown>][7dd6dcc4][ExtensionHostConnection] <2284095><stderr> Error reading NLS messages file /home/ubuntu/.vscode-server/data/clp/3e5f309cded99583ab37e0d647ed0d1b.ko/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/nls.messages.json: Error: ENOENT: no such file or directory, open '/home/ubuntu/.vscode-server/data/clp/3e5f309cded99583ab37e0d647ed0d1b.ko/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/nls.messages.json'
 
 2024-12-08 02:34:07.818 [info] New EH opened, aborting shutdown
+2024-12-08 03:17:49.808 [info] [<unknown>][79165076][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-12-08 03:17:49.927 [info] [<unknown>][7dd6dcc4][ExtensionHostConnection] <2284095> Extension Host Process exited with code: 0, signal: null.
+2024-12-08 03:17:49.928 [info] Last EH closed, waiting before shutting down
+2024-12-08 03:22:49.935 [info] Last EH closed, shutting down
