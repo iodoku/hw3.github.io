@@ -421,3 +421,122 @@ cat ~/.ssh/id_rsa.pub
 ssh -T git@github.com
 git remote set-url origin git@github.com:iodoku/hw3.github.io.git
 git push origin develop
+pip freeze > requirements.txt
+mkdir tests
+pytest
+pip install pytest
+sudo apt update
+sudo apt install python3-pip
+pip install pytest
+sudo apt install python3-pytest
+pytest
+pip freeze > requirements.txt
+pip install python-dotenv
+mv build/* 
+git add .
+git commit -m "Deploy static site to GitHub Pages"
+git push origin develop
+git rm --cached .ssh/id_rsa
+git commit -m "Remove sensitive file .ssh/id_rsa"
+git push origin develop
+sudo apt install python3-pip
+pip3 install git-filter-repo
+git filter-repo --path .ssh/id_rsa --invert-paths
+https://github.com/iodoku/hw3.github.io/security/secret-scanning/unblock-secret/2ptkyWJRal8mmQlpS3cEx6VdIrJ
+explorer.exe https://github.com/iodoku/hw3.github.io/security/secret-scanning/unblock-secret/2ptkyWJRal8mmQlpS3cEx6VdIrJ
+https://github.com/iodoku/hw3.github.io/security/secret-scanning/unblock-secret/2ptkyWJRal8mmQlpS3cEx6VdIrJ
+ssh -T git@github.com
+git remote set-url origin git@github.com:iodoku/hw3.github.io.git
+git push origin develop
+git log --name-only bc00e461788e6bd329d4ed501d726be82984d4e0
+git filter-repo --path .ssh/id_rsa --path .ssh/id_rsa.pub --invert-paths
+pip install git-filter-repo
+source myenv/bin/activate
+git add .
+git commit -m "update"
+git push origin develop
+pip install git-filter-repo
+git filter-repo --path .ssh/id_rsa --path .ssh/id_rsa.pub --invert-paths
+cd ~
+mv your-repo your-repo-backup
+echo ".ssh/id_rsa" >> .gitignore
+echo ".ssh/id_rsa.pub" >> .gitignore
+git add .gitignore
+git commit -m "Add sensitive files to .gitignore"
+rm -f ~/.ssh/id_rsa ~/.ssh/id_rsa.pub
+ssh-keygen -t rsa -b 4096 -C "jdhi0112@naver.com"
+git add.
+git add .
+git commit -m "update"
+git push origin develop
+ls ~/.ssh/id_rsa ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub
+ssh -T git@github.com
+git remote -v
+git push origin develop
+git clone git@github.com:iodoku/hw3.github.io.git
+cd hw3.github.io
+git add .
+git commit -m "update"
+git push origin develop
+git branch
+git checkout -b develop
+git push origin develop
+git add .
+git commit -m "update"
+git push origin develop
+git status
+git log --oneline
+cd..
+cd ..
+cd ~
+git add .
+git commit -m "update"
+git push origin develop
+git pull origin develop
+git push origin develop
+git pull origin develop
+git push origin develop
+git push origin develop --force
+git filter-repo --path .ssh/id_rsa --path .ssh/id_rsa.pub --invert-paths
+git remote -v
+git remote set-url origin https://github.com/iodoku/hw3.github.io.git
+git remote -v
+git push origin develop
+git fetch origin
+git merge origin/develop
+git push origin develop
+mkdir ~/repo-backup
+cp -r . ~/repo-backup/
+pip install git-filter-repo
+git clone --mirror https://github.com/iodoku/hw3.github.io.git
+cp -r ~/hw3.github.io ~/hw3.github.io-backup
+pwd
+ls -l
+cp -r hw3.github.io hw3.github.io-backup
+pwd
+mkdir hw3.github.io
+cd hw3.github.io
+git init
+cp ../*.py ../requirements.txt ../README.md .
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/iodoku/hw3.github.io.git
+git branch -M main
+git push -u origin main
+git push -u origin main --force
+git branch -M main
+git push -u origin main
+cd~
+cd ~
+git remote add origin https://github.com/iodoku/hw3.github.io.git
+git remote remove origin
+git remote add origin https://github.com/iodoku/hw3.github.io.git
+git branch -M main
+git push -u origin main
+git rev-list --objects --all | grep -E '18df4deeea7b95ab30d299822ca6fab17a5cc30c|243aa3817f8c7b5940a371e1382b5ebaf262cb82'
+git rm --cached .vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/node
+git rm --cached .ssh/id_rsa
+git filter-repo --path .ssh/id_rsa --invert-paths
+git push -u origin main
+cp -r ~/hw3.github.io ~/hw3.github.io-backup
