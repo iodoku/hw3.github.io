@@ -14,3 +14,15 @@
 2024-12-08 10:16:14.715 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
 2024-12-08 10:16:14.715 [info] ExtensionService#_doActivateExtension cweijan.vscode-mysql-client2, startup: false, activationEvent: 'onStartupFinished'
 2024-12-08 10:16:15.392 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-12-08 11:19:41.393 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2024-12-08 11:19:47.231 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2024-12-08 11:47:28.375 [warning] [Decorations] CAPPING events from decorations provider vscode.git 414
+2024-12-08 11:47:36.625 [warning] [Decorations] CAPPING events from decorations provider vscode.git 414
+2024-12-08 11:47:41.776 [warning] [Decorations] CAPPING events from decorations provider vscode.git 414
+2024-12-08 11:47:46.917 [warning] [Decorations] CAPPING events from decorations provider vscode.git 414
+2024-12-08 11:47:53.657 [warning] [Decorations] CAPPING events from decorations provider vscode.git 414
+2024-12-08 11:47:57.778 [warning] [Decorations] CAPPING events from decorations provider vscode.git 414
+2024-12-08 11:47:58.815 [warning] [Decorations] CAPPING events from decorations provider vscode.git 414
+2024-12-08 11:48:05.659 [warning] [Decorations] CAPPING events from decorations provider vscode.git 414
+2024-12-08 11:48:19.179 [warning] [Decorations] CAPPING events from decorations provider vscode.git 414
+2024-12-08 11:48:23.167 [warning] [Decorations] CAPPING events from decorations provider vscode.git 414
