@@ -6,3 +6,4 @@ env/
 .ssh/id_rsa
 .ssh/id_rsa.pub
 .git-credentials
+.vscode-server/data/logs/
