@@ -153,44 +153,22 @@ def add_bookmark():
 @app.route('/bookmarks', methods=['GET'])
 @jwt_required()
 def get_bookmarks():
-    user_id = get_jwt_identity()  # 인증된 사용자 ID 가져오기
-    page = request.args.get('page', 1, type=int)  # 페이지 번호 (기본값 1)
-    page_size = request.args.get('page_size', 20, type=int)  # 페이지 당 항목 수 (기본값 20)
-    
-    # 시작 인덱스 계산
-    offset = (page - 1) * page_size
+    user_id = get_jwt_identity()  # 현재 로그인한 사용자의 ID
+    page = request.args.get('page', 1, type=int)
+    page_size = request.args.get('page_size', 20, type=int)
 
-    # 사용자 북마크 조회 쿼리
-    cursor = mysql.connection.cursor()
-    cursor.execute("""
-        SELECT b.id, b.job_id, j.title, j.company, j.location 
-        FROM bookmarks b
-        JOIN jobs j ON b.job_id = j.id
-        WHERE b.user_id = %s
-        ORDER BY b.created_at DESC
-        LIMIT %s OFFSET %s
-    """, (user_id, page_size, offset))
+    # MySQL에서 사용자별 북마크 목록 조회
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    cursor.execute("SELECT id, url, description, created_at FROM bookmarks WHERE user_id = %s ORDER BY created_at DESC LIMIT %s OFFSET %s",
+                   (user_id, page_size, (page - 1) * page_size))
     bookmarks = cursor.fetchall()
-    
     cursor.close()
+    conn.close()
 
-    if not bookmarks:
-        return jsonify({"message": "No bookmarks found"}), 404
+    data = [{"id": bookmark[0], "url": bookmark[1], "description": bookmark[2], "created_at": bookmark[3]} for bookmark in bookmarks]
 
-    # 북마크 정보 반환
-    response_data = {
-        "bookmarks": [
-            {
-                "id": bookmark[0],
-                "job_id": bookmark[1],
-                "title": bookmark[2],
-                "company": bookmark[3],
-                "location": bookmark[4],
-            }
-            for bookmark in bookmarks
-        ]
-    }
-    return json.dumps(response_data), 200, {'Content-Type': 'application/json'}
+    return jsonify({"bookmarks": data}), 200
 
 
             
